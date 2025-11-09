@@ -1257,6 +1257,13 @@
 /home/anastasiiayablunovska/catkin_ws/build/moveit/moveit_ros/planning_interface/test/CMakeFiles/edit_cache.dir
 /home/anastasiiayablunovska/catkin_ws/build/moveit/moveit_ros/planning_interface/test/CMakeFiles/_run_tests_moveit_ros_planning_interface_rostest_test_robot_state_update.test.dir
 /home/anastasiiayablunovska/catkin_ws/build/moveit/moveit_ros/planning_interface/test/CMakeFiles/run_tests_moveit_ros_planning_interface_rostest_test_dual_arm_robot_state_update.test.dir
+/home/anastasiiayablunovska/catkin_ws/build/main_logic/CMakeFiles/install/strip.dir
+/home/anastasiiayablunovska/catkin_ws/build/main_logic/CMakeFiles/install/local.dir
+/home/anastasiiayablunovska/catkin_ws/build/main_logic/CMakeFiles/install.dir
+/home/anastasiiayablunovska/catkin_ws/build/main_logic/CMakeFiles/list_install_components.dir
+/home/anastasiiayablunovska/catkin_ws/build/main_logic/CMakeFiles/rebuild_cache.dir
+/home/anastasiiayablunovska/catkin_ws/build/main_logic/CMakeFiles/edit_cache.dir
+/home/anastasiiayablunovska/catkin_ws/build/main_logic/CMakeFiles/test.dir
 /home/anastasiiayablunovska/catkin_ws/build/moveit/moveit_planners/chomp/chomp_interface/CMakeFiles/install/local.dir
 /home/anastasiiayablunovska/catkin_ws/build/moveit/moveit_planners/chomp/chomp_interface/CMakeFiles/install.dir
 /home/anastasiiayablunovska/catkin_ws/build/moveit/moveit_planners/chomp/chomp_interface/CMakeFiles/list_install_components.dir

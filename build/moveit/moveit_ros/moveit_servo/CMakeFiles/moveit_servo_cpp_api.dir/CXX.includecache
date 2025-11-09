@@ -460,16 +460,6 @@ moveit_servo/collision_check.h
 moveit_servo/make_shared_from_pool.h
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_ros/moveit_servo/src/low_pass_filter.cpp
-moveit_servo/low_pass_filter.h
--
-cmath
--
-string
--
-ros/ros.h
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_ros/moveit_servo/src/servo.cpp
 rosparam_shortcuts/rosparam_shortcuts.h
 -

@@ -224,20 +224,6 @@ tf2_eigen/tf2_eigen.h
 memory
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/collision_distance_field/src/collision_distance_field_types.cpp
-moveit/collision_distance_field/collision_distance_field_types.h
--
-geometric_shapes/body_operations.h
--
-moveit/distance_field/distance_field.h
--
-moveit/distance_field/find_internal_points.h
--
-ros/console.h
--
-memory
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/collision_distance_field/src/collision_env_distance_field.cpp
 moveit/robot_model/robot_model.h
 -
@@ -284,12 +270,6 @@ Eigen/Geometry
 eigen_stl_containers/eigen_stl_containers.h
 -
 moveit/macros/class_forward.h
--
-
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/distance_field/include/moveit/distance_field/find_internal_points.h
-eigen_stl_containers/eigen_stl_containers.h
--
-geometric_shapes/bodies.h
 -
 
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/distance_field/include/moveit/distance_field/propagation_distance_field.h
@@ -2696,20 +2676,6 @@ memory
 vector
 -
 
-/opt/ros/noetic/include/geometric_shapes/body_operations.h
-geometric_shapes/shapes.h
-/opt/ros/noetic/include/geometric_shapes/geometric_shapes/shapes.h
-geometric_shapes/bodies.h
-/opt/ros/noetic/include/geometric_shapes/geometric_shapes/bodies.h
-geometric_shapes/shape_messages.h
-/opt/ros/noetic/include/geometric_shapes/geometric_shapes/shape_messages.h
-geometry_msgs/Pose.h
--
-visualization_msgs/Marker.h
--
-vector
--
-
 /opt/ros/noetic/include/geometric_shapes/check_isometry.h
 algorithm
 -
@@ -2734,16 +2700,6 @@ Eigen/Geometry
 eigen_stl_containers/eigen_stl_containers.h
 -
 geometric_shapes/aabb.h
--
-
-/opt/ros/noetic/include/geometric_shapes/shape_messages.h
-shape_msgs/SolidPrimitive.h
--
-shape_msgs/Mesh.h
--
-shape_msgs/Plane.h
--
-boost/variant.hpp
 -
 
 /opt/ros/noetic/include/geometric_shapes/shapes.h

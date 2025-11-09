@@ -642,10 +642,6 @@ tf2_eigen/tf2_eigen.h
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/velocity_profile_atrap.cpp
-pilz_industrial_motion_planner/velocity_profile_atrap.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/velocity_profile_atrap.h
-
 /opt/ros/noetic/include/class_loader/class_loader.hpp
 boost/bind/bind.hpp
 -

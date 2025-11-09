@@ -318,16 +318,6 @@ moveit/planning_interface/planning_interface.h
 stdexcept
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/cartesian_limit.cpp
-pilz_industrial_motion_planner/cartesian_limit.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/cartesian_limit.h
-
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/cartesian_limits_aggregator.cpp
-ros/ros.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/ros/ros.h
-pilz_industrial_motion_planner/cartesian_limits_aggregator.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/cartesian_limits_aggregator.h
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/joint_limits_aggregator.cpp
 pilz_industrial_motion_planner/joint_limits_aggregator.h
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/joint_limits_aggregator.h
@@ -339,18 +329,6 @@ moveit/robot_model_loader/robot_model_loader.h
 -
 vector
 -
-
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/joint_limits_container.cpp
-pilz_industrial_motion_planner/joint_limits_container.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/joint_limits_container.h
-ros/ros.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/ros/ros.h
-stdexcept
--
-
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/limits_container.cpp
-pilz_industrial_motion_planner/limits_container.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/limits_container.h
 
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner.cpp
 pilz_industrial_motion_planner/pilz_industrial_motion_planner.h

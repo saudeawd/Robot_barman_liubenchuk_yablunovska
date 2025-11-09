@@ -184,22 +184,6 @@ moveit/collision_detection/collision_tools.h
 tf2_eigen/tf2_eigen.h
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/collision_detection/src/world.cpp
-moveit/collision_detection/world.h
--
-geometric_shapes/check_isometry.h
--
-boost/algorithm/string/predicate.hpp
--
-ros/console.h
--
-
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/collision_detection/src/world_diff.cpp
-moveit/collision_detection/world_diff.h
--
-functional
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/exceptions/include/moveit/exceptions/exceptions.h
 stdexcept
 -

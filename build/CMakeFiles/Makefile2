@@ -96,6 +96,7 @@ all: moveit/moveit_planners/pilz_industrial_motion_planner_testutils/all
 all: moveit/moveit_ros/warehouse/all
 all: moveit/moveit_ros/benchmarks/all
 all: moveit/moveit_ros/planning_interface/all
+all: main_logic/all
 all: moveit/moveit_planners/chomp/chomp_interface/all
 all: moveit/moveit_ros/visualization/all
 all: moveit/moveit_ros/moveit_servo/all
@@ -157,6 +158,7 @@ preinstall: moveit/moveit_planners/pilz_industrial_motion_planner_testutils/prei
 preinstall: moveit/moveit_ros/warehouse/preinstall
 preinstall: moveit/moveit_ros/benchmarks/preinstall
 preinstall: moveit/moveit_ros/planning_interface/preinstall
+preinstall: main_logic/preinstall
 preinstall: moveit/moveit_planners/chomp/chomp_interface/preinstall
 preinstall: moveit/moveit_ros/visualization/preinstall
 preinstall: moveit/moveit_ros/moveit_servo/preinstall
@@ -223,6 +225,7 @@ clean: moveit/moveit_planners/pilz_industrial_motion_planner_testutils/clean
 clean: moveit/moveit_ros/warehouse/clean
 clean: moveit/moveit_ros/benchmarks/clean
 clean: moveit/moveit_ros/planning_interface/clean
+clean: main_logic/clean
 clean: moveit/moveit_planners/chomp/chomp_interface/clean
 clean: moveit/moveit_ros/visualization/clean
 clean: moveit/moveit_ros/moveit_servo/clean
@@ -296,6 +299,24 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest_main.dir/clean
 gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 
 .PHONY : gtest/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory main_logic
+
+# Recursive "all" directory target.
+main_logic/all:
+
+.PHONY : main_logic/all
+
+# Recursive "preinstall" directory target.
+main_logic/preinstall:
+
+.PHONY : main_logic/preinstall
+
+# Recursive "clean" directory target.
+main_logic/clean:
+
+.PHONY : main_logic/clean
 
 #=============================================================================
 # Directory level rules for directory moveit/moveit

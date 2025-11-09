@@ -296,16 +296,6 @@ Eigen/Core
 Eigen/Geometry
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_ros/robot_interaction/src/interactive_marker_helpers.cpp
-moveit/robot_interaction/interactive_marker_helpers.h
--
-tf2/LinearMath/Quaternion.h
--
-tf2_geometry_msgs/tf2_geometry_msgs.h
--
-boost/math/constants/constants.hpp
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_ros/robot_interaction/src/kinematic_options.cpp
 moveit/robot_interaction/kinematic_options.h
 -

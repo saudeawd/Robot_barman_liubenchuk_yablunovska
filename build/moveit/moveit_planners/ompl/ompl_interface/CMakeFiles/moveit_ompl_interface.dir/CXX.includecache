@@ -618,12 +618,6 @@ ompl/tools/config/SelfConfig.h
 utility
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/ompl/ompl_interface/src/detail/goal_union.cpp
-moveit/ompl_interface/detail/goal_union.h
--
-ompl/base/goals/GoalLazySamples.h
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/ompl/ompl_interface/src/detail/projection_evaluators.cpp
 moveit/ompl_interface/detail/projection_evaluators.h
 -

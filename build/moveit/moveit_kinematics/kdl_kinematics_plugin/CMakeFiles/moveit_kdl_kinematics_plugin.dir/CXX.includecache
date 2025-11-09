@@ -226,10 +226,6 @@ moveit/robot_model/robot_model.h
 moveit/robot_state/robot_state.h
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_kinematics/kdl_kinematics_plugin/src/chainiksolver_vel_mimic_svd.cpp
-moveit/kdl_kinematics_plugin/chainiksolver_vel_mimic_svd.hpp
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_kinematics/kdl_kinematics_plugin/src/kdl_kinematics_plugin.cpp
 moveit/kdl_kinematics_plugin/kdl_kinematics_plugin.h
 -

@@ -212,16 +212,6 @@ cassert
 boost/assert.hpp
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/robot_state/src/attached_body.cpp
-moveit/robot_state/attached_body.h
--
-geometric_shapes/check_isometry.h
--
-geometric_shapes/shapes.h
--
-boost/algorithm/string/predicate.hpp
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/robot_state/src/cartesian_interpolator.cpp
 memory
 -

@@ -851,6 +851,12 @@ lite6_moveit_config_BINARY_DIR:STATIC=/home/anastasiiayablunovska/catkin_ws/buil
 //Value Computed by CMake
 lite6_moveit_config_SOURCE_DIR:STATIC=/home/anastasiiayablunovska/catkin_ws/src/xarm_ros/lite6_moveit_config
 
+//Value Computed by CMake
+main_logic_BINARY_DIR:STATIC=/home/anastasiiayablunovska/catkin_ws/build/main_logic
+
+//Value Computed by CMake
+main_logic_SOURCE_DIR:STATIC=/home/anastasiiayablunovska/catkin_ws/src/main_logic
+
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/noetic/share/map_msgs/cmake
 
@@ -904,6 +910,9 @@ moveit_collision_plugin_loader_LIB_DEPENDS:STATIC=general;moveit_ros_occupancy_m
 
 //Value Computed by CMake
 moveit_commander_BINARY_DIR:STATIC=/home/anastasiiayablunovska/catkin_ws/build/moveit/moveit_commander
+
+//The directory containing a CMake configuration file for moveit_commander.
+moveit_commander_DIR:PATH=/home/anastasiiayablunovska/catkin_ws/devel/share/moveit_commander/cmake
 
 //Value Computed by CMake
 moveit_commander_SOURCE_DIR:STATIC=/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_commander
@@ -1913,7 +1922,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=129
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=130
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

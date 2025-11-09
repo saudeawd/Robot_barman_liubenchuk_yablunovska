@@ -446,16 +446,6 @@ boost/noncopyable.hpp
 moveit/macros/class_forward.h
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/transforms/src/pytransforms.cpp
-pybind11/pybind11.h
--
-pybind11/stl.h
--
-moveit/python/pybind_rosmsg_typecasters.h
--
-moveit/transforms/transforms.h
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_core/utils/include/moveit/utils/lexical_casts.h
 string
 -

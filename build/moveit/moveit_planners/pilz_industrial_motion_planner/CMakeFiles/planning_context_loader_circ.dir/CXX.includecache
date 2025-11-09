@@ -562,12 +562,6 @@ moveit/planning_scene/planning_scene.h
 pilz_industrial_motion_planner/trajectory_generator.h
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/include/pilz_industrial_motion_planner/pilz_industrial_motion_planner/trajectory_generator.h
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/path_circle_generator.cpp
-kdl/config.h
--
-pilz_industrial_motion_planner/path_circle_generator.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/path_circle_generator.h
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/planning_context_loader.cpp
 pilz_industrial_motion_planner/planning_context_loader.h
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_planners/pilz_industrial_motion_planner/src/pilz_industrial_motion_planner/planning_context_loader.h

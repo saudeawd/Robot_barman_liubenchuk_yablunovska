@@ -1028,22 +1028,6 @@ QWidget
 moveit/setup_assistant/tools/moveit_config_data.h
 -
 
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/header_widget.cpp
-header_widget.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/header_widget.h
-QFileDialog
--
-QFont
--
-QLabel
--
-QLineEdit
--
-QPushButton
--
-QVBoxLayout
--
-
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/header_widget.h
 QWidget
 -
@@ -1076,20 +1060,6 @@ kinematic_chain_widget.h
 QWidget
 -
 moveit/setup_assistant/tools/moveit_config_data.h
--
-
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/navigation_widget.cpp
-navigation_widget.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/navigation_widget.h
-QApplication
--
-QPainter
--
-QScrollBar
--
-QStandardItemModel
--
-iostream
 -
 
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/navigation_widget.h
@@ -1314,12 +1284,6 @@ moveit/setup_assistant/tools/moveit_config_data.h
 boost/program_options/variables_map.hpp
 -
 boost/thread/mutex.hpp
--
-
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.cpp
-setup_screen_widget.h
-/home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.h
-iostream
 -
 
 /home/anastasiiayablunovska/catkin_ws/src/moveit/moveit_setup_assistant/src/widgets/setup_screen_widget.h
@@ -7386,17 +7350,9 @@ qevent.h
 qevent.h
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qevent.h
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QPainter
-qpainter.h
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpainter.h
-
 /usr/include/aarch64-linux-gnu/qt5/QtGui/QPixmap
 qpixmap.h
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qpixmap.h
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/QStandardItemModel
-qstandarditemmodel.h
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qstandarditemmodel.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtGui/QSyntaxHighlighter
 qsyntaxhighlighter.h
@@ -7612,38 +7568,6 @@ QtGui/qwindowdefs.h
 QtCore/qrect.h
 -
 
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qpainter.h
-QtGui/qtguiglobal.h
--
-QtCore/qnamespace.h
--
-QtCore/qrect.h
--
-QtCore/qpoint.h
--
-QtCore/qscopedpointer.h
--
-QtGui/qpixmap.h
--
-QtGui/qimage.h
--
-QtGui/qtextoption.h
--
-QtGui/qpolygon.h
--
-QtGui/qpen.h
--
-QtGui/qbrush.h
--
-QtGui/qmatrix.h
--
-QtGui/qtransform.h
--
-QtGui/qfontinfo.h
--
-QtGui/qfontmetrics.h
--
-
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qpainterpath.h
 QtGui/qtguiglobal.h
 -
@@ -7752,20 +7676,6 @@ QtCore/qprocessordetection.h
 QtGui/qtguiglobal.h
 -
 QtCore/qprocessordetection.h
--
-
-/usr/include/aarch64-linux-gnu/qt5/QtGui/qstandarditemmodel.h
-QtGui/qtguiglobal.h
--
-QtCore/qabstractitemmodel.h
--
-QtGui/qbrush.h
--
-QtGui/qfont.h
--
-QtGui/qicon.h
--
-QtCore/qdatastream.h
 -
 
 /usr/include/aarch64-linux-gnu/qt5/QtGui/qsyntaxhighlighter.h
@@ -8033,10 +7943,6 @@ qradiobutton.h
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QScrollArea
 qscrollarea.h
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscrollarea.h
-
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/QScrollBar
-qscrollbar.h
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscrollbar.h
 
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/QSlider
 qslider.h
@@ -8382,14 +8288,6 @@ QtWidgets/qwidget.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qabstractscrollarea.h
--
-
-/usr/include/aarch64-linux-gnu/qt5/QtWidgets/qscrollbar.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qwidget.h
--
-QtWidgets/qabstractslider.h
 -
 
 /usr/include/aarch64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
