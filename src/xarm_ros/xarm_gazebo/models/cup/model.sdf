@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="cup">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+
+      <!-- Візуалізація -->
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.04</radius>
+            <length>0.10</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.2 0.5 1.0 1</ambient>
+          <diffuse>0.2 0.5 1.0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+
+      <!-- Колізія -->
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.04</radius>
+            <length>0.10</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <!-- Інерційні властивості -->
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.00009</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00009</iyy>
+          <iyz>0</iyz>
+          <izz>0.00008</izz>
+        </inertia>
+      </inertial>
+    </link>
+  </model>
+</sdf>

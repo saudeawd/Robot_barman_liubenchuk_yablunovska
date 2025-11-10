@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="realsense_gazebo" params="prefix:=''">
+
+    <!-- Gazebo плагін для RGB камери -->
+    <gazebo reference="${prefix}camera_color_frame">
+      <sensor type="camera" name="camera_color">
+        <update_rate>30.0</update_rate>
+        <camera name="camera_color">
+          <horizontal_fov>1.211</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>30.0</updateRate>
+          <cameraName>camera/color</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>${prefix}camera_color_optical_frame</frameName>
+          <hackBaseline>0.0</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+    <!-- Gazebo плагін для Depth камери -->
+    <gazebo reference="${prefix}camera_depth_frame">
+      <sensor type="depth" name="camera_depth">
+        <update_rate>30.0</update_rate>
+        <camera name="camera_depth">
+          <horizontal_fov>1.047</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>10.0</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </camera>
+        <plugin name="depth_camera_controller" filename="libgazebo_ros_openni_kinect.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>30.0</updateRate>
+          <cameraName>camera/depth</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <depthImageTopicName>depth/image_raw</depthImageTopicName>
+          <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+          <pointCloudTopicName>depth/points</pointCloudTopicName>
+          <frameName>${prefix}camera_depth_optical_frame</frameName>
+          <pointCloudCutoff>0.1</pointCloudCutoff>
+          <pointCloudCutoffMax>10.0</pointCloudCutoffMax>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+    <!-- Матеріали для візуалізації в Gazebo -->
+    <gazebo reference="${prefix}static_camera_link">
+      <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="${prefix}camera_stand">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+  </xacro:macro>
+</robot>

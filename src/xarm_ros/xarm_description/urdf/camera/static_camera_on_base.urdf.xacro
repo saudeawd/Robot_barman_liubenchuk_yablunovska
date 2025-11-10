@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!--
+    Макрос для прикріплення статичної камери RealSense до бази робота
+    Камера на рівні підстави link_base (як на столі перед роботом)
+  -->
+  <xacro:macro name="static_camera_on_base" params="prefix:=''">
+    <xacro:property name="M_PI" value="3.1415926535897931" />
+
+    <!-- Link для камери (статична, прикріплена до бази) -->
+    <link name="${prefix}static_camera_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://xarm_description/meshes/camera/realsense/visual/d435_with_cam_stand.stl"/>
+        </geometry>
+        <material name="camera_material">
+          <color rgba="0.8 0.8 0.8 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://xarm_description/meshes/camera/realsense/collision/d435_with_cam_stand.stl"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.072"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="0.00003881243" ixy="0.0" ixz="0.0"
+                 iyy="0.0000498940" iyz="0.0"
+                 izz="0.00003879257"/>
+      </inertial>
+    </link>
+
+    <!--
+      Joint що прикріплює камеру до БАЗИ робота (link_base)
+      Камера стоїть на рівні підстави (як на столі)
+    -->
+    <joint name="${prefix}static_camera_mount_joint" type="fixed">
+      <parent link="${prefix}link_base" />
+      <child link="${prefix}static_camera_link" />
+      <!--
+        xyz: позиція камери відносно бази
+        - x=0.0: на одній лінії з базою
+        - y=0.0: по центру
+        - z=0.0: НА РІВНІ ПІДСТАВИ (як стоїть на столі)
+
+        rpy: орієнтація камери
+        - roll=0: без нахилу вбік
+        - pitch=0: дивиться ПРЯМО ВПЕРЕД (горизонтально)
+        - yaw=0: без обертання
+      -->
+      <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+    </joint>
+
+    <!-- Optical frames для камери (потрібні для ROS topics) -->
+    <link name="${prefix}camera_link"></link>
+    <link name="${prefix}camera_depth_frame"></link>
+    <link name="${prefix}camera_depth_optical_frame"></link>
+    <link name="${prefix}camera_color_frame"></link>
+    <link name="${prefix}camera_color_optical_frame"></link>
+    <link name="${prefix}camera_left_ir_frame"></link>
+    <link name="${prefix}camera_left_ir_optical_frame"></link>
+    <link name="${prefix}camera_right_ir_frame"></link>
+    <link name="${prefix}camera_right_ir_optical_frame"></link>
+
+    <!-- Camera link прикріплений до static_camera_link -->
+    <joint name="${prefix}camera_link_joint" type="fixed">
+      <parent link="${prefix}static_camera_link" />
+      <child link="${prefix}camera_link" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="${prefix}camera_depth_joint" type="fixed">
+      <parent link="${prefix}camera_link" />
+      <child link="${prefix}camera_depth_frame" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="${prefix}camera_depth_optical_joint" type="fixed">
+      <parent link="${prefix}camera_depth_frame" />
+      <child link="${prefix}camera_depth_optical_frame" />
+      <!-- Optical frame convention: Z forward, Y down, X right -->
+      <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
+    </joint>
+
+    <joint name="${prefix}camera_color_joint" type="fixed">
+      <parent link="${prefix}camera_link" />
+      <child link="${prefix}camera_color_frame" />
+      <origin xyz="0 0.015 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="${prefix}camera_color_optical_joint" type="fixed">
+      <parent link="${prefix}camera_color_frame" />
+      <child link="${prefix}camera_color_optical_frame" />
+      <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
+    </joint>
+
+    <joint name="${prefix}camera_left_ir_joint" type="fixed">
+      <parent link="${prefix}camera_link" />
+      <child link="${prefix}camera_left_ir_frame" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="${prefix}camera_left_ir_optical_joint" type="fixed">
+      <parent link="${prefix}camera_left_ir_frame" />
+      <child link="${prefix}camera_left_ir_optical_frame" />
+      <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
+    </joint>
+
+    <joint name="${prefix}camera_right_ir_joint" type="fixed">
+      <parent link="${prefix}camera_link" />
+      <child link="${prefix}camera_right_ir_frame" />
+      <origin xyz="0 -0.050 0" rpy="0 0 0" />
+    </joint>
+
+    <joint name="${prefix}camera_right_ir_optical_joint" type="fixed">
+      <parent link="${prefix}camera_right_ir_frame" />
+      <child link="${prefix}camera_right_ir_optical_frame" />
+      <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
+    </joint>
+  </xacro:macro>
+</robot>
