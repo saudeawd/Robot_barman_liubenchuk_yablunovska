@@ -213,8 +213,5 @@
         velocity="3.14" />
       <dynamics damping="3" friction="1" />
     </joint>
-
-    <!-- ЧЕРВОНИЙ КУБ ВИДАЛЕНО! Залишаємо тільки RealSense -->
-
   </xacro:macro>
 </robot>

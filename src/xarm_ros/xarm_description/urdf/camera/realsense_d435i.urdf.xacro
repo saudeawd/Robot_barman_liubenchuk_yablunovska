@@ -34,7 +34,6 @@
       <link name="${prefix}camera_right_ir_frame"></link>
       <link name="${prefix}camera_right_ir_optical_frame"></link>
 
-      <!-- Камера дивиться ВПЕРЕД -->
       <joint name="${prefix}camera_link_joint" type="fixed">
         <parent link="${prefix}link_eef" />
         <child link="${prefix}camera_link" />
