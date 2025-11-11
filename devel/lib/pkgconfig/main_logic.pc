@@ -1,8 +1,0 @@
-prefix=/home/anastasiiayablunovska/catkin_ws/devel
-
-Name: main_logic
-Description: Description of main_logic
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
