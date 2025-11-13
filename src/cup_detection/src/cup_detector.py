@@ -15,13 +15,15 @@ class CupDetector:
         self.image_sub = rospy.Subscriber('/arm_camera/image_raw', Image, self.image_callback)
         self.cup_position_pub = rospy.Publisher('/target_cup_position', PointStamped, queue_size=10)
         self.debug_image_pub = rospy.Publisher('/cup_detection/debug_image', Image, queue_size=10)
+        self.mask_image_pub = rospy.Publisher('/cup_detection/mask_image', Image, queue_size=1)
         self.frame_count = 0
         self.process_every_n_frames = 3
         rospy.loginfo("=== Cup Detector Started ===")
         rospy.loginfo("Subscribed to: /arm_camera/image_raw")
         rospy.loginfo("Publishing to: /target_cup_position")
         rospy.loginfo("Debug images: /cup_detection/debug_image")
-    
+        rospy.loginfo("Mask images: /cup_detection/mask_image")
+
     def detect_cups(self, image):
         hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
         lower_blue = np.array([100, 80, 40])
@@ -118,8 +120,11 @@ class CupDetector:
             try:
                 debug_msg = self.bridge.cv2_to_imgmsg(debug_image, "bgr8")
                 self.debug_image_pub.publish(debug_msg)
+                
+                mask_msg = self.bridge.cv2_to_imgmsg(mask, "mono8")
+                self.mask_image_pub.publish(mask_msg)
             except Exception as e:
-                rospy.logwarn(f"Failed to publish debug image: {e}")
+                rospy.logwarn(f"Failed to publish debug image or mask: {e}")
         except Exception as e:
             rospy.logerr(f"Error processing image: {e}")
             import traceback
