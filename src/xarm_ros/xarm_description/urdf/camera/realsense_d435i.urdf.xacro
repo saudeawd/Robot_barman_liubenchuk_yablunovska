@@ -38,7 +38,7 @@
         <parent link="${prefix}link_eef" />
         <child link="${prefix}camera_link" />
         <!-- Камера дивиться вперед, трохи вниз (20 градусів) -->
-        <origin xyz="0.0 0.0 0.0" rpy="0 0.349 0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 1.047 0" />
       </joint>
 
       <joint name="${prefix}camera_depth_joint" type="fixed">
