@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js"
   "CMakeFiles/xarm_gripper_generate_messages_nodejs"
 )
 

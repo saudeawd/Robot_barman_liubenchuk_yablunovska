@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/libxarm_hw.pdb"
-  "/home/liubenchuk/xarm_ws/devel/lib/libxarm_hw.so"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_hw.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_hw.so"
   "CMakeFiles/xarm_hw.dir/src/xarm_hw.cpp.o"
 )
 

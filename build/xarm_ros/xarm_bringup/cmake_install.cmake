@@ -1,8 +1,8 @@
-# Install script for directory: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_bringup
+# Install script for directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liubenchuk/xarm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_bringup/catkin_generated/installspace/xarm_bringup.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_bringup/catkin_generated/installspace/xarm_bringup.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_bringup/cmake" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_bringup/catkin_generated/installspace/xarm_bringupConfig.cmake"
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_bringup/catkin_generated/installspace/xarm_bringupConfig-version.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_bringup/catkin_generated/installspace/xarm_bringupConfig.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_bringup/catkin_generated/installspace/xarm_bringupConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_bringup" TYPE FILE FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_bringup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_bringup" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_bringup/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_bringup" TYPE DIRECTORY FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_bringup/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_bringup" TYPE DIRECTORY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_bringup/launch")
 endif()
 

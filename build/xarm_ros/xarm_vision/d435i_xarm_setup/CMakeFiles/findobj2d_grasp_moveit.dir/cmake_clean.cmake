@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/d435i_xarm_setup/findobj2d_grasp_moveit"
-  "/home/liubenchuk/xarm_ws/devel/lib/d435i_xarm_setup/findobj2d_grasp_moveit.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/d435i_xarm_setup/findobj2d_grasp_moveit"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/d435i_xarm_setup/findobj2d_grasp_moveit.pdb"
   "CMakeFiles/findobj2d_grasp_moveit.dir/src/findobj_grasp_moveit_planner.cpp.o"
 )
 

@@ -67,14 +67,14 @@ set(run_recorded_traj_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(run_recorded_traj_SOURCE_PREFIX /home/liubenchuk/xarm_ws/src/xarm_ros/examples/run_recorded_traj)
-  set(run_recorded_traj_DEVEL_PREFIX /home/liubenchuk/xarm_ws/devel)
+  set(run_recorded_traj_SOURCE_PREFIX /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/examples/run_recorded_traj)
+  set(run_recorded_traj_DEVEL_PREFIX /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel)
   set(run_recorded_traj_INSTALL_PREFIX "")
   set(run_recorded_traj_PREFIX ${run_recorded_traj_DEVEL_PREFIX})
 else()
   set(run_recorded_traj_SOURCE_PREFIX "")
   set(run_recorded_traj_DEVEL_PREFIX "")
-  set(run_recorded_traj_INSTALL_PREFIX /home/liubenchuk/xarm_ws/install)
+  set(run_recorded_traj_INSTALL_PREFIX /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install)
   set(run_recorded_traj_PREFIX ${run_recorded_traj_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/liubenchuk/xarm_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

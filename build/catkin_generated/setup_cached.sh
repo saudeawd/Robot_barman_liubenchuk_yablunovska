@@ -7,10 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/liubenchuk/xarm_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu'
-export PKG_CONFIG_PATH='/home/liubenchuk/xarm_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig'
-export PWD='/home/liubenchuk/xarm_ws/build'
-export PYTHONPATH="/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/liubenchuk/xarm_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/liubenchuk/xarm_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build'
+export PYTHONPATH="/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROS_PACKAGE_PATH="/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src:$ROS_PACKAGE_PATH"

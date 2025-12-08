@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dxarm_cxx_sdk_EXPORTS
 
-CXX_INCLUDES = -I/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include 
+CXX_INCLUDES = -I/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include 
 

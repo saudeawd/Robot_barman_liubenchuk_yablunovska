@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/xarm_driver_node"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/xarm_driver_node.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/xarm_driver_node"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/xarm_driver_node.pdb"
   "CMakeFiles/xarm_driver_node.dir/src/xarm_driver_node.cpp.o"
 )
 

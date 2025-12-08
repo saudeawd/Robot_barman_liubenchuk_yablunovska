@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/exec_plan.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/exec_plan.h
 ros/service_traits.h
 -
 xarm_planner/exec_planRequest.h
@@ -14,7 +14,7 @@ xarm_planner/exec_planRequest.h
 xarm_planner/exec_planResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/exec_planRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/exec_planRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/exec_planResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/exec_planResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/joint_plan.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/joint_plan.h
 ros/service_traits.h
 -
 xarm_planner/joint_planRequest.h
@@ -54,7 +54,7 @@ xarm_planner/joint_planRequest.h
 xarm_planner/joint_planResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/joint_planRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/joint_planRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/joint_planResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/joint_planResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/src/xarm_gripper_planner.cpp
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/src/xarm_gripper_planner.cpp
 moveit/move_group_interface/move_group_interface.h
 -
 moveit/planning_scene_interface/planning_scene_interface.h

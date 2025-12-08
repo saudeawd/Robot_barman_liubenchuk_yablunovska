@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/move_test"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/move_test.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/move_test"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/move_test.pdb"
   "CMakeFiles/move_test.dir/test/move_test.cpp.o"
 )
 

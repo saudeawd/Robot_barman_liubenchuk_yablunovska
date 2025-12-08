@@ -1,8 +1,8 @@
-prefix=/home/liubenchuk/xarm_ws/devel
+prefix=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel
 
 Name: xarm_gripper
 Description: Description of xarm_gripper
 Version: 1.0.0
-Cflags: -I/home/liubenchuk/xarm_ws/devel/include
+Cflags: -I/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include
 Libs: -L${prefix}/lib 
 Requires: actionlib_msgs xarm_api xarm_msgs

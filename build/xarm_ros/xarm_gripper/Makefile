@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper/CMakeFiles/progress.marks
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper/CMakeFiles/progress.marks
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/clean
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ gripper_client: xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/rule
 
 # fast build rule for target.
 gripper_client/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build
 .PHONY : gripper_client/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ gripper_action_server: xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.di
 
 # fast build rule for target.
 gripper_action_server/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build
 .PHONY : gripper_action_server/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ xarm_gripper_genpy: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/rule
 
 # fast build rule for target.
 xarm_gripper_genpy/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genpy.dir/build
 .PHONY : xarm_gripper_genpy/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ xarm_gripper_generate_messages_py: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper
 
 # fast build rule for target.
 xarm_gripper_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build
 .PHONY : xarm_gripper_generate_messages_py/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ xarm_gripper_gennodejs: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.
 
 # fast build rule for target.
 xarm_gripper_gennodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gennodejs.dir/build
 .PHONY : xarm_gripper_gennodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ xarm_gripper_generate_messages_nodejs: xarm_ros/xarm_gripper/CMakeFiles/xarm_gri
 
 # fast build rule for target.
 xarm_gripper_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build
 .PHONY : xarm_gripper_generate_messages_nodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ xarm_gripper_genlisp: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/
 
 # fast build rule for target.
 xarm_gripper_genlisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_genlisp.dir/build
 .PHONY : xarm_gripper_genlisp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ xarm_gripper_generate_messages: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_ge
 
 # fast build rule for target.
 xarm_gripper_generate_messages/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages.dir/build
 .PHONY : xarm_gripper_generate_messages/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ _xarm_gripper_generate_messages_check_deps_MoveFeedback: xarm_ros/xarm_gripper/C
 
 # fast build rule for target.
 _xarm_gripper_generate_messages_check_deps_MoveFeedback/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveFeedback.dir/build
 .PHONY : _xarm_gripper_generate_messages_check_deps_MoveFeedback/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ _xarm_gripper_generate_messages_check_deps_MoveAction: xarm_ros/xarm_gripper/CMa
 
 # fast build rule for target.
 _xarm_gripper_generate_messages_check_deps_MoveAction/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveAction.dir/build
 .PHONY : _xarm_gripper_generate_messages_check_deps_MoveAction/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ _xarm_gripper_generate_messages_check_deps_MoveActionResult: xarm_ros/xarm_gripp
 
 # fast build rule for target.
 _xarm_gripper_generate_messages_check_deps_MoveActionResult/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionResult.dir/build
 .PHONY : _xarm_gripper_generate_messages_check_deps_MoveActionResult/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _xarm_gripper_generate_messages_check_deps_MoveActionGoal: xarm_ros/xarm_gripper
 
 # fast build rule for target.
 _xarm_gripper_generate_messages_check_deps_MoveActionGoal/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionGoal.dir/build
 .PHONY : _xarm_gripper_generate_messages_check_deps_MoveActionGoal/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ xarm_gripper_generate_messages_eus: xarm_ros/xarm_gripper/CMakeFiles/xarm_grippe
 
 # fast build rule for target.
 xarm_gripper_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_eus.dir/build
 .PHONY : xarm_gripper_generate_messages_eus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ xarm_gripper_geneus: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/ru
 
 # fast build rule for target.
 xarm_gripper_geneus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_geneus.dir/build
 .PHONY : xarm_gripper_geneus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ _xarm_gripper_generate_messages_check_deps_MoveGoal: xarm_ros/xarm_gripper/CMake
 
 # fast build rule for target.
 _xarm_gripper_generate_messages_check_deps_MoveGoal/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveGoal.dir/build
 .PHONY : _xarm_gripper_generate_messages_check_deps_MoveGoal/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ _xarm_gripper_generate_messages_check_deps_MoveResult: xarm_ros/xarm_gripper/CMa
 
 # fast build rule for target.
 _xarm_gripper_generate_messages_check_deps_MoveResult/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveResult.dir/build
 .PHONY : _xarm_gripper_generate_messages_check_deps_MoveResult/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ xarm_gripper_generate_messages_cpp: xarm_ros/xarm_gripper/CMakeFiles/xarm_grippe
 
 # fast build rule for target.
 xarm_gripper_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp.dir/build
 .PHONY : xarm_gripper_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ _xarm_gripper_generate_messages_check_deps_MoveActionFeedback: xarm_ros/xarm_gri
 
 # fast build rule for target.
 _xarm_gripper_generate_messages_check_deps_MoveActionFeedback/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/_xarm_gripper_generate_messages_check_deps_MoveActionFeedback.dir/build
 .PHONY : _xarm_gripper_generate_messages_check_deps_MoveActionFeedback/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ xarm_gripper_gencpp: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/ru
 
 # fast build rule for target.
 xarm_gripper_gencpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_gencpp.dir/build
 .PHONY : xarm_gripper_gencpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -464,7 +464,7 @@ xarm_gripper_generate_messages_lisp: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripp
 
 # fast build rule for target.
 xarm_gripper_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_lisp.dir/build
 .PHONY : xarm_gripper_generate_messages_lisp/fast
 
 src/gripper_action_server.o: src/gripper_action_server.cpp.o
@@ -473,7 +473,7 @@ src/gripper_action_server.o: src/gripper_action_server.cpp.o
 
 # target to build an object file
 src/gripper_action_server.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/src/gripper_action_server.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/src/gripper_action_server.cpp.o
 .PHONY : src/gripper_action_server.cpp.o
 
 src/gripper_action_server.i: src/gripper_action_server.cpp.i
@@ -482,7 +482,7 @@ src/gripper_action_server.i: src/gripper_action_server.cpp.i
 
 # target to preprocess a source file
 src/gripper_action_server.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/src/gripper_action_server.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/src/gripper_action_server.cpp.i
 .PHONY : src/gripper_action_server.cpp.i
 
 src/gripper_action_server.s: src/gripper_action_server.cpp.s
@@ -491,7 +491,7 @@ src/gripper_action_server.s: src/gripper_action_server.cpp.s
 
 # target to generate assembly for a file
 src/gripper_action_server.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/src/gripper_action_server.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_action_server.dir/src/gripper_action_server.cpp.s
 .PHONY : src/gripper_action_server.cpp.s
 
 src/gripper_client.o: src/gripper_client.cpp.o
@@ -500,7 +500,7 @@ src/gripper_client.o: src/gripper_client.cpp.o
 
 # target to build an object file
 src/gripper_client.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/src/gripper_client.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/src/gripper_client.cpp.o
 .PHONY : src/gripper_client.cpp.o
 
 src/gripper_client.i: src/gripper_client.cpp.i
@@ -509,7 +509,7 @@ src/gripper_client.i: src/gripper_client.cpp.i
 
 # target to preprocess a source file
 src/gripper_client.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/src/gripper_client.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/src/gripper_client.cpp.i
 .PHONY : src/gripper_client.cpp.i
 
 src/gripper_client.s: src/gripper_client.cpp.s
@@ -518,7 +518,7 @@ src/gripper_client.s: src/gripper_client.cpp.s
 
 # target to generate assembly for a file
 src/gripper_client.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/src/gripper_client.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/build.make xarm_ros/xarm_gripper/CMakeFiles/gripper_client.dir/src/gripper_client.cpp.s
 .PHONY : src/gripper_client.cpp.s
 
 # Help Target
@@ -571,6 +571,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

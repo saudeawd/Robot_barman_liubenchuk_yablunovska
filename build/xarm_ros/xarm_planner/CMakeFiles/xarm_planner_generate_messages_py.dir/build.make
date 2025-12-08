@@ -43,63 +43,63 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 # Utility rule file for xarm_planner_generate_messages_py.
 
 # Include the progress variables for this target.
 include xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/progress.make
 
-xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py
-xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py
-xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py
-xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py
-xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py
+xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py
+xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py
+xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py
+xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py
+xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py
 
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV xarm_planner/pose_plan"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV xarm_planner/pose_plan"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV xarm_planner/joint_plan"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV xarm_planner/joint_plan"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV xarm_planner/exec_plan"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV xarm_planner/exec_plan"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV xarm_planner/single_straight_plan"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV xarm_planner/single_straight_plan"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_planner -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python srv __init__.py for xarm_planner"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv --initpy
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python srv __init__.py for xarm_planner"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv --initpy
 
 xarm_planner_generate_messages_py: xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py
-xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py
-xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py
-xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py
-xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py
-xarm_planner_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py
+xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py
+xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py
+xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py
+xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py
+xarm_planner_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py
 xarm_planner_generate_messages_py: xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/build.make
 
 .PHONY : xarm_planner_generate_messages_py
@@ -110,10 +110,10 @@ xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/build: xa
 .PHONY : xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/build
 
 xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/clean:
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner && $(CMAKE_COMMAND) -P CMakeFiles/xarm_planner_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner && $(CMAKE_COMMAND) -P CMakeFiles/xarm_planner_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/clean
 
 xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xarm_ros/xarm_planner/CMakeFiles/xarm_planner_generate_messages_py.dir/depend
 

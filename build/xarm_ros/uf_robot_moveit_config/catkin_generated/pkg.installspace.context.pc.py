@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "uf_robot_moveit_config"
-PROJECT_SPACE_DIR = "/home/liubenchuk/xarm_ws/install"
+PROJECT_SPACE_DIR = "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install"
 PROJECT_VERSION = "0.3.0"

@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/test/example1_report_norm.cpp
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/test/example1_report_norm.cpp
 unistd.h
 -
 signal.h
 -
 ros/ros.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/test/ros/ros.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/test/ros/ros.h
 xarm/core/connect.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/test/xarm/core/connect.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/test/xarm/core/connect.h
 xarm/core/report_data.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/test/xarm/core/report_data.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/test/xarm/core/report_data.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/serial/serial.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/serial/serial.h
 limits
 -
 vector
@@ -36,7 +36,7 @@ stdexcept
 serial/v8stdint.h
 -
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/serial/v8stdint.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/serial/v8stdint.h
 stddef.h
 -
 stdio.h
@@ -44,21 +44,21 @@ stdio.h
 stdint.h
 -
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/common/data_type.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/common/data_type.h
 stdio.h
 -
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/common/queue_memcpy.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/common/queue_memcpy.h
 mutex
 -
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/connect.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/connect.h
 xarm/core/instruction/uxbus_cmd_ser.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/xarm/core/instruction/uxbus_cmd_ser.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/xarm/core/instruction/uxbus_cmd_ser.h
 xarm/core/instruction/uxbus_cmd_tcp.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/xarm/core/instruction/uxbus_cmd_tcp.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/xarm/core/instruction/uxbus_cmd_tcp.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd.h
 thread
 -
 chrono
@@ -80,51 +80,51 @@ unistd.h
 time.h
 -
 xarm/core/common/data_type.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/common/data_type.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/common/data_type.h
 xarm/core/instruction/uxbus_cmd_config.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/instruction/uxbus_cmd_config.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/instruction/uxbus_cmd_config.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_config.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_config.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_ser.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_ser.h
 xarm/core/instruction/uxbus_cmd.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/instruction/uxbus_cmd.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/instruction/uxbus_cmd.h
 xarm/core/port/ser.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/port/ser.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/port/ser.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_tcp.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/uxbus_cmd_tcp.h
 xarm/core/instruction/uxbus_cmd.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/instruction/uxbus_cmd.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/instruction/uxbus_cmd.h
 xarm/core/port/socket.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/port/socket.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/instruction/xarm/core/port/socket.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/ser.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/ser.h
 iostream
 -
 thread
 -
 serial/serial.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/serial/serial.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/serial/serial.h
 xarm/core/common/data_type.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/data_type.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/data_type.h
 xarm/core/common/queue_memcpy.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/queue_memcpy.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/queue_memcpy.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/socket.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/socket.h
 iostream
 -
 thread
 -
 xarm/core/common/data_type.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/data_type.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/data_type.h
 xarm/core/common/queue_memcpy.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/queue_memcpy.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/port/xarm/core/common/queue_memcpy.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/report_data.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/report_data.h
 string
 -
 xarm/core/common/data_type.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/xarm/core/common/data_type.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm/core/xarm/core/common/data_type.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -43,101 +43,101 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 # Utility rule file for xarm_gripper_generate_messages_py.
 
 # Include the progress variables for this target.
 include xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/progress.make
 
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py
 
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG xarm_gripper/MoveAction"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG xarm_gripper/MoveAction"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG xarm_gripper/MoveActionGoal"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG xarm_gripper/MoveActionGoal"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG xarm_gripper/MoveActionResult"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG xarm_gripper/MoveActionResult"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG xarm_gripper/MoveActionFeedback"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG xarm_gripper/MoveActionFeedback"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG xarm_gripper/MoveGoal"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG xarm_gripper/MoveGoal"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG xarm_gripper/MoveResult"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python from MSG xarm_gripper/MoveResult"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG xarm_gripper/MoveFeedback"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG xarm_gripper/MoveFeedback"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py
-/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python msg __init__.py for xarm_gripper"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg --initpy
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python msg __init__.py for xarm_gripper"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg --initpy
 
 xarm_gripper_generate_messages_py: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py
-xarm_gripper_generate_messages_py: /home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveGoal.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveResult.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveFeedback.py
+xarm_gripper_generate_messages_py: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_gripper/msg/__init__.py
 xarm_gripper_generate_messages_py: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build.make
 
 .PHONY : xarm_gripper_generate_messages_py
@@ -148,10 +148,10 @@ xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build: xa
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/build
 
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/clean:
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && $(CMAKE_COMMAND) -P CMakeFiles/xarm_gripper_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && $(CMAKE_COMMAND) -P CMakeFiles/xarm_gripper_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/clean
 
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_gripper /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_gripper /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py.dir/depend
 

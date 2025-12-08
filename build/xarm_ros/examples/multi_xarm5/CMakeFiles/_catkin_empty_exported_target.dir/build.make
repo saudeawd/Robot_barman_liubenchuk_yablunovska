@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/examples/multi_xarm5 && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/multi_xarm5 && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/src/xarm_ros/examples/multi_xarm5 /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build/xarm_ros/examples/multi_xarm5 /home/liubenchuk/xarm_ws/build/xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/examples/multi_xarm5 /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/multi_xarm5 /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xarm_ros/examples/multi_xarm5/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

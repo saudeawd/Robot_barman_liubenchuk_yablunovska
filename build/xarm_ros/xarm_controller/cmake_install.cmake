@@ -1,8 +1,8 @@
-# Install script for directory: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller
+# Install script for directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liubenchuk/xarm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,30 +38,30 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_controller/catkin_generated/installspace/xarm_controller.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_controller/catkin_generated/installspace/xarm_controller.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_controller/cmake" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_controller/catkin_generated/installspace/xarm_controllerConfig.cmake"
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_controller/catkin_generated/installspace/xarm_controllerConfig-version.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_controller/catkin_generated/installspace/xarm_controllerConfig.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_controller/catkin_generated/installspace/xarm_controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_controller" TYPE FILE FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_controller" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xarm_controller" TYPE DIRECTORY FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller/include/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xarm_controller" TYPE DIRECTORY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller/include/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_controller" TYPE DIRECTORY FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_controller" TYPE DIRECTORY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_controller" TYPE DIRECTORY FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_controller" TYPE DIRECTORY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -71,12 +71,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_hw.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/liubenchuk/xarm_ws/devel/lib/libxarm_hw.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_hw.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_hw.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_hw.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_hw.so"
-         OLD_RPATH "/opt/ros/noetic/lib:/home/liubenchuk/xarm_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_hw.so")
@@ -94,12 +94,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_combined_hw.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/liubenchuk/xarm_ws/devel/lib/libxarm_combined_hw.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_combined_hw.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_combined_hw.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_combined_hw.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_combined_hw.so"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_combined_hw.so")
@@ -117,12 +117,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/sample_motion"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_controller" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_controller/sample_motion")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_controller" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_controller/sample_motion")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/sample_motion" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/sample_motion")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/sample_motion"
-         OLD_RPATH "/opt/ros/noetic/lib:/home/liubenchuk/xarm_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/sample_motion")
@@ -137,12 +137,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/uf_ros_controller"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_controller" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_controller/uf_ros_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_controller" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_controller/uf_ros_controller")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/uf_ros_controller" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/uf_ros_controller")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/uf_ros_controller"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/uf_ros_controller")
@@ -157,12 +157,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/xarm_combined_traj_controller"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_controller" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_controller/xarm_combined_traj_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_controller" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_controller/xarm_combined_traj_controller")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/xarm_combined_traj_controller" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/xarm_combined_traj_controller")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/xarm_combined_traj_controller"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_controller/xarm_combined_traj_controller")

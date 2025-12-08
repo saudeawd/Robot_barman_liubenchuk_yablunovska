@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.
 .PHONY : xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 
 xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_vision/camera_demo && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_vision/camera_demo && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_vision/camera_demo /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_vision/camera_demo /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_vision/camera_demo /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_vision/camera_demo /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xarm_ros/xarm_vision/camera_demo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 

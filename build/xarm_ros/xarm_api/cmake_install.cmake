@@ -1,8 +1,8 @@
-# Install script for directory: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api
+# Install script for directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liubenchuk/xarm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,22 +38,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api/catkin_generated/installspace/xarm_api.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api/catkin_generated/installspace/xarm_api.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_api/cmake" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api/catkin_generated/installspace/xarm_apiConfig.cmake"
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api/catkin_generated/installspace/xarm_apiConfig-version.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api/catkin_generated/installspace/xarm_apiConfig.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api/catkin_generated/installspace/xarm_apiConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_api" TYPE FILE FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/xarm_api" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xarm_api" TYPE DIRECTORY FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/xarm_api" TYPE DIRECTORY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/include/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,12 +63,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_driver.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_driver.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_driver.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_driver.so"
-         OLD_RPATH "/opt/ros/noetic/lib:/home/liubenchuk/xarm_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_driver.so")
@@ -86,12 +86,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/xarm_driver_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/xarm_driver_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/xarm_driver_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/xarm_driver_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/xarm_driver_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/xarm_driver_node"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/xarm_driver_node")
@@ -106,7 +106,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_client.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_client.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_client.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_client.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libxarm_ros_client.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -125,12 +125,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/example1_report_norm"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/example1_report_norm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/example1_report_norm")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/example1_report_norm" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/example1_report_norm")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/example1_report_norm"
-         OLD_RPATH "/opt/ros/noetic/lib:/home/liubenchuk/xarm_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/example1_report_norm")
@@ -145,12 +145,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/move_test"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/move_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/move_test")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/move_test" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/move_test")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/move_test"
-         OLD_RPATH "/opt/ros/noetic/lib:/home/liubenchuk/xarm_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/move_test")
@@ -165,12 +165,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/servo_cartesian_test"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/servo_cartesian_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/servo_cartesian_test")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/servo_cartesian_test" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/servo_cartesian_test")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/servo_cartesian_test"
-         OLD_RPATH "/opt/ros/noetic/lib:/home/liubenchuk/xarm_ws/devel/lib:"
+         OLD_RPATH "/opt/ros/noetic/lib:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/servo_cartesian_test")
@@ -185,12 +185,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_tool_modbus"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_tool_modbus")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_tool_modbus")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_tool_modbus" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_tool_modbus")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_tool_modbus"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_tool_modbus")
@@ -205,12 +205,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_ros_client"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_xarm_ros_client")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_xarm_ros_client")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_ros_client" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_ros_client")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_ros_client"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_ros_client")
@@ -225,12 +225,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_velo_move"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_xarm_velo_move")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_xarm_velo_move")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_velo_move" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_velo_move")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_velo_move"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_velo_move")
@@ -245,12 +245,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_states"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_xarm_states")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/xarm_api" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_xarm_states")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_states" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_states")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_states"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/xarm_api/test_xarm_states")

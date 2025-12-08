@@ -67,14 +67,14 @@ set(lite6_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(lite6_moveit_config_SOURCE_PREFIX /home/liubenchuk/xarm_ws/src/xarm_ros/lite6_moveit_config)
-  set(lite6_moveit_config_DEVEL_PREFIX /home/liubenchuk/xarm_ws/devel)
+  set(lite6_moveit_config_SOURCE_PREFIX /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/lite6_moveit_config)
+  set(lite6_moveit_config_DEVEL_PREFIX /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel)
   set(lite6_moveit_config_INSTALL_PREFIX "")
   set(lite6_moveit_config_PREFIX ${lite6_moveit_config_DEVEL_PREFIX})
 else()
   set(lite6_moveit_config_SOURCE_PREFIX "")
   set(lite6_moveit_config_DEVEL_PREFIX "")
-  set(lite6_moveit_config_INSTALL_PREFIX /home/liubenchuk/xarm_ws/install)
+  set(lite6_moveit_config_INSTALL_PREFIX /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install)
   set(lite6_moveit_config_PREFIX ${lite6_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/liubenchuk/xarm_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/servo_cartesian_test"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/servo_cartesian_test.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/servo_cartesian_test"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/servo_cartesian_test.pdb"
   "CMakeFiles/servo_cartesian_test.dir/test/servo_cartesian_test.cpp.o"
 )
 

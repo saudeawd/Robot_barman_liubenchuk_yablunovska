@@ -1,146 +1,266 @@
 #!/usr/bin/env python3
-
 import rospy
-import cv2
-import numpy as np
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import PointStamped, Point
+from geometry_msgs.msg import PointStamped
+import cv2
 from cv_bridge import CvBridge
-from std_msgs.msg import Header
+import numpy as np
+import onnxruntime as ort
+from collections import deque
 
-class CupDetector:
-    def __init__(self):
-        rospy.init_node('cup_detector', anonymous=True)
-        self.bridge = CvBridge()
-        self.image_sub = rospy.Subscriber('/arm_camera/image_raw', Image, self.image_callback)
-        self.cup_position_pub = rospy.Publisher('/target_cup_position', PointStamped, queue_size=10)
-        self.debug_image_pub = rospy.Publisher('/cup_detection/debug_image', Image, queue_size=10)
-        self.mask_image_pub = rospy.Publisher('/cup_detection/mask_image', Image, queue_size=1)
-        self.frame_count = 0
-        self.process_every_n_frames = 3
-        rospy.loginfo("=== Cup Detector Started ===")
-        rospy.loginfo("Subscribed to: /arm_camera/image_raw")
-        rospy.loginfo("Publishing to: /target_cup_position")
-        rospy.loginfo("Debug images: /cup_detection/debug_image")
-        rospy.loginfo("Mask images: /cup_detection/mask_image")
+model_path = "yolov8n.onnx"
+session = ort.InferenceSession(model_path, providers=['CPUExecutionProvider'])
 
-    def detect_cups(self, image):
-        hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-        lower_blue = np.array([100, 80, 40])
-        upper_blue = np.array([135, 255, 255])
-        mask = cv2.inRange(hsv, lower_blue, upper_blue)
-        kernel = np.ones((5, 5), np.uint8)
-        mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel, iterations=2)
-        mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel, iterations=1)
-        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        cups = []
-        height, width = image.shape[:2]
-        for contour in contours:
-            area = cv2.contourArea(contour)
-            if area > 2000:
-                x, y, w, h = cv2.boundingRect(contour)
-                aspect_ratio = float(h) / w if w > 0 else 0
-                if 1.0 < aspect_ratio < 3.5:
-                    center_x = x + w // 2
-                    center_y = y + h // 2
-                    bottom_y = y + h
-                    cups.append({
-                        'bbox': (x, y, w, h),
-                        'center': (center_x, center_y),
-                        'bottom': (center_x, bottom_y),
-                        'area': area,
-                        'y_position': center_y
-                    })
-        return cups, mask
-    
-    def pixel_to_world(self, pixel_x, pixel_y, image_width, image_height):
-        center_x = image_width / 2.0
-        center_y = image_height / 2.0
-        delta_x = pixel_x - center_x
-        delta_y = pixel_y - center_y
-        scale_x = 0.0012
-        scale_y = 0.0012
-        camera_offset_x = 0.5
-        camera_offset_y = 0.0
-        offset_x = delta_x * scale_x
-        offset_y = delta_y * scale_y
-        world_x = camera_offset_x + offset_y
-        world_y = camera_offset_y + offset_x
-        world_z = 0.82
-        rospy.loginfo_throttle(3.0, 
-            f"Pixel ({pixel_x}, {pixel_y}) -> "
-            f"Offset ({offset_x:.3f}, {offset_y:.3f}) -> "
-            f"World ({world_x:.3f}, {world_y:.3f}, {world_z:.3f})")
-        return world_x, world_y, world_z
-    
-    def image_callback(self, msg):
-        self.frame_count += 1
-        if self.frame_count % self.process_every_n_frames != 0:
-            return
-        try:
-            cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
-            height, width = cv_image.shape[:2]
-            cups, mask = self.detect_cups(cv_image)
-            debug_image = cv_image.copy()
-            if len(cups) > 0:
-                cups.sort(key=lambda x: x['y_position'], reverse=True)
-                for i, cup in enumerate(cups):
-                    x, y, w, h = cup['bbox']
-                    center_x, center_y = cup['center']
-                    color = (0, 255, 0) if i == 0 else (255, 255, 0)
-                    thickness = 3 if i == 0 else 2
-                    cv2.rectangle(debug_image, (x, y), (x + w, y + h), color, thickness)
-                    cv2.circle(debug_image, (center_x, center_y), 8, color, -1)
-                    label = f"TARGET #{i+1}" if i == 0 else f"Cup #{i+1}"
-                    cv2.putText(debug_image, label, (x, y - 10),
-                               cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
-                target_cup = cups[0]
-                center_x, center_y = target_cup['center']
-                world_x, world_y, world_z = self.pixel_to_world(center_x, center_y, width, height)
-                cup_point = PointStamped()
-                cup_point.header = Header()
-                cup_point.header.stamp = rospy.Time.now()
-                cup_point.header.frame_id = "world"
-                cup_point.point.x = world_x
-                cup_point.point.y = world_y
-                cup_point.point.z = world_z
-                self.cup_position_pub.publish(cup_point)
-                rospy.loginfo_throttle(2.0, 
-                    f"Target cup: pixel({center_x}, {center_y}) -> "
-                    f"world({world_x:.3f}, {world_y:.3f}, {world_z:.3f})")
-                info_text = f"Cups detected: {len(cups)}"
-                cv2.putText(debug_image, info_text, (10, 30),
-                           cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-                coord_text = f"Target: ({world_x:.2f}, {world_y:.2f}, {world_z:.2f})"
-                cv2.putText(debug_image, coord_text, (10, 70),
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-            else:
-                cv2.putText(debug_image, "No cups detected", (10, 30),
-                           cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-            try:
-                debug_msg = self.bridge.cv2_to_imgmsg(debug_image, "bgr8")
-                self.debug_image_pub.publish(debug_msg)
-                
-                mask_msg = self.bridge.cv2_to_imgmsg(mask, "mono8")
-                self.mask_image_pub.publish(mask_msg)
-            except Exception as e:
-                rospy.logwarn(f"Failed to publish debug image or mask: {e}")
-        except Exception as e:
-            rospy.logerr(f"Error processing image: {e}")
-            import traceback
-            traceback.print_exc()
-    
-    def run(self):
-        rospy.loginfo("Cup detector ready! Waiting for images...")
-        rospy.spin()
+# Separate publishers for bottle and cup
+bottle_pub = rospy.Publisher('/bottle_coords', PointStamped, queue_size=10)
+cup_pub = rospy.Publisher('/cup_coords', PointStamped, queue_size=10)
 
-if __name__ == '__main__':
-    try:
-        detector = CupDetector()
-        detector.run()
-    except rospy.ROSInterruptException:
-        rospy.loginfo("Cup detector stopped")
-    except Exception as e:
-        rospy.logerr(f"Fatal error: {e}")
-        import traceback
-        traceback.print_exc()
+bridge = CvBridge()
+
+RELEVANT_CLASSES = {
+    39: 'bottle',
+    40: 'wine_glass', 
+    41: 'cup'
+}
+
+# Temporal smoothing - зберігаємо останні детекції
+bottle_history = deque(maxlen=5)  # Останні 5 кадрів
+cup_history = deque(maxlen=5)
+
+def preprocess(img):
+    h, w = img.shape[:2]
+    img_in = cv2.resize(img, (640, 640))
+    img_in = cv2.cvtColor(img_in, cv2.COLOR_BGR2RGB).astype(np.float32) / 255.0
+    img_in = np.transpose(img_in, (2, 0, 1))
+    img_in = np.expand_dims(img_in, axis=0)
+    return img_in, w, h
+
+def nms(boxes, scores, iou_threshold=0.5):
+    """Non-Maximum Suppression to remove duplicate detections"""
+    if len(boxes) == 0:
+        return []
+    
+    boxes = np.array(boxes)
+    scores = np.array(scores)
+    
+    x1 = boxes[:, 0]
+    y1 = boxes[:, 1]
+    x2 = boxes[:, 2]
+    y2 = boxes[:, 3]
+    
+    areas = (x2 - x1) * (y2 - y1)
+    order = scores.argsort()[::-1]
+    
+    keep = []
+    while order.size > 0:
+        i = order[0]
+        keep.append(i)
+        
+        xx1 = np.maximum(x1[i], x1[order[1:]])
+        yy1 = np.maximum(y1[i], y1[order[1:]])
+        xx2 = np.minimum(x2[i], x2[order[1:]])
+        yy2 = np.minimum(y2[i], y2[order[1:]])
+        
+        w = np.maximum(0.0, xx2 - xx1)
+        h = np.maximum(0.0, yy2 - yy1)
+        intersection = w * h
+        
+        iou = intersection / (areas[i] + areas[order[1:]] - intersection)
+        
+        inds = np.where(iou <= iou_threshold)[0]
+        order = order[inds + 1]
+    
+    return keep
+
+def smooth_detection(history, new_detection):
+    """Згладжування детекцій з використанням історії"""
+    if new_detection is None:
+        # Якщо немає нової детекції, використовуємо останню
+        if len(history) > 0:
+            return history[-1]
+        return None
+    
+    history.append(new_detection)
+    
+    # Усереднюємо координати за останні кадри
+    if len(history) > 0:
+        cx_avg = int(np.mean([d['cx'] for d in history]))
+        cy_avg = int(np.mean([d['cy'] for d in history]))
+        conf_avg = np.mean([d['conf'] for d in history])
+        
+        return {
+            'cx': cx_avg,
+            'cy': cy_avg,
+            'conf': conf_avg,
+            'x1': new_detection['x1'],
+            'y1': new_detection['y1'],
+            'x2': new_detection['x2'],
+            'y2': new_detection['y2']
+        }
+    
+    return new_detection
+
+def callback(msg):
+    frame = bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+    orig_h, orig_w = frame.shape[:2]
+    
+    input_tensor, _, _ = preprocess(frame)
+    
+    outputs = session.run(None, {session.get_inputs()[0].name: input_tensor})
+    predictions = outputs[0]
+    
+    if len(predictions.shape) == 3:
+        predictions = predictions[0]
+        predictions = predictions.T
+    
+    boxes_xywh = predictions[:, :4]
+    class_scores = predictions[:, 4:]
+    
+    class_ids = np.argmax(class_scores, axis=1)
+    confidences = np.max(class_scores, axis=1)
+    
+    # Знижуємо поріг для стакана
+    mask = confidences > 0.2  # Нижчий поріг
+    boxes_xywh = boxes_xywh[mask]
+    class_ids = class_ids[mask]
+    confidences = confidences[mask]
+    
+    bottle_boxes = []
+    bottle_scores = []
+    cup_boxes = []
+    cup_scores = []
+    
+    for box_xywh, cls, conf in zip(boxes_xywh, class_ids, confidences):
+        if cls not in [39, 40, 41]:
+            continue
+        
+        x_center_norm, y_center_norm, width_norm, height_norm = box_xywh
+        
+        x_center_640 = x_center_norm * 640
+        y_center_640 = y_center_norm * 640
+        width_640 = width_norm * 640
+        height_640 = height_norm * 640
+        
+        x1_640 = x_center_640 - width_640 / 2
+        y1_640 = y_center_640 - height_640 / 2
+        x2_640 = x_center_640 + width_640 / 2
+        y2_640 = y_center_640 + height_640 / 2
+        
+        scale_x = orig_w / 640.0
+        scale_y = orig_h / 640.0
+        
+        x1 = int(x1_640 * scale_x)
+        y1 = int(y1_640 * scale_y)
+        x2 = int(x2_640 * scale_x)
+        y2 = int(y2_640 * scale_y)
+        
+        x1 = max(0, min(x1, orig_w - 1))
+        y1 = max(0, min(y1, orig_h - 1))
+        x2 = max(0, min(x2, orig_w - 1))
+        y2 = max(0, min(y2, orig_h - 1))
+        
+        if x2 <= x1 or y2 <= y1:
+            continue
+        
+        box = [x1, y1, x2, y2]
+        
+        if cls == 39:  # bottle
+            bottle_boxes.append(box)
+            bottle_scores.append(conf)
+        elif cls in [40, 41]:  # wine_glass or cup
+            cup_boxes.append(box)
+            cup_scores.append(conf)
+    
+    bottle_indices = nms(bottle_boxes, bottle_scores, iou_threshold=0.5)
+    cup_indices = nms(cup_boxes, cup_scores, iou_threshold=0.5)
+    
+    detection_count = 0
+    
+    # Process bottle
+    bottle_detection = None
+    for idx in bottle_indices:
+        x1, y1, x2, y2 = bottle_boxes[idx]
+        conf = bottle_scores[idx]
+        cx = (x1 + x2) // 2
+        cy = (y1 + y2) // 2
+        
+        if idx == bottle_indices[0]:
+            bottle_detection = {
+                'cx': cx, 'cy': cy, 'conf': conf,
+                'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2
+            }
+        break
+    
+    # Smooth bottle detection
+    bottle_smoothed = smooth_detection(bottle_history, bottle_detection)
+    
+    if bottle_smoothed:
+        detection_count += 1
+        x1, y1, x2, y2 = bottle_smoothed['x1'], bottle_smoothed['y1'], bottle_smoothed['x2'], bottle_smoothed['y2']
+        cx, cy = bottle_smoothed['cx'], bottle_smoothed['cy']
+        conf = bottle_smoothed['conf']
+        
+        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 255), 2)
+        cv2.circle(frame, (cx, cy), 5, (0, 0, 255), -1)
+        label = f"bottle {conf:.2f}"
+        cv2.putText(frame, label, (x1, y1 - 10), 
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
+        
+        ps = PointStamped()
+        ps.header.stamp = rospy.Time.now()
+        ps.header.frame_id = "camera_color_optical_frame"
+        ps.point.x = float(cx)
+        ps.point.y = float(cy)
+        ps.point.z = 0.0
+        bottle_pub.publish(ps)
+        rospy.loginfo_throttle(2, f"Bottle: ({cx},{cy}), Conf={conf:.2f}")
+    
+    # Process cup
+    cup_detection = None
+    for idx in cup_indices:
+        x1, y1, x2, y2 = cup_boxes[idx]
+        conf = cup_scores[idx]
+        cx = (x1 + x2) // 2
+        cy = (y1 + y2) // 2
+        
+        if idx == cup_indices[0]:
+            cup_detection = {
+                'cx': cx, 'cy': cy, 'conf': conf,
+                'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2
+            }
+        break
+    
+    # Smooth cup detection
+    cup_smoothed = smooth_detection(cup_history, cup_detection)
+    
+    if cup_smoothed:
+        detection_count += 1
+        x1, y1, x2, y2 = cup_smoothed['x1'], cup_smoothed['y1'], cup_smoothed['x2'], cup_smoothed['y2']
+        cx, cy = cup_smoothed['cx'], cup_smoothed['cy']
+        conf = cup_smoothed['conf']
+        
+        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        cv2.circle(frame, (cx, cy), 5, (0, 0, 255), -1)
+        label = f"cup {conf:.2f}"
+        cv2.putText(frame, label, (x1, y1 - 10), 
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+        
+        ps = PointStamped()
+        ps.header.stamp = rospy.Time.now()
+        ps.header.frame_id = "camera_color_optical_frame"
+        ps.point.x = float(cx)
+        ps.point.y = float(cy)
+        ps.point.z = 0.0
+        cup_pub.publish(ps)
+        rospy.loginfo_throttle(2, f"Cup: ({cx},{cy}), Conf={conf:.2f}")
+    
+    cv2.putText(frame, f"Detections: {detection_count}", (10, 30),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+    
+    cv2.imshow("Cup Detection", frame)
+    cv2.waitKey(1)
+
+rospy.init_node('cup_detector')
+rospy.Subscriber('/arm_camera/image_raw', Image, callback)
+rospy.spin()
+cv2.destroyAllWindows()

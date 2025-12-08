@@ -2,7 +2,7 @@
 
 message(STATUS "xarm_gripper: 7 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,39 +17,39 @@ add_custom_target(xarm_gripper_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
 add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg" "std_msgs/Header:xarm_gripper/MoveResult:xarm_gripper/MoveFeedback:actionlib_msgs/GoalID:xarm_gripper/MoveActionGoal:actionlib_msgs/GoalStatus:xarm_gripper/MoveActionFeedback:xarm_gripper/MoveActionResult:xarm_gripper/MoveGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg" "actionlib_msgs/GoalID:xarm_gripper/MoveActionResult:xarm_gripper/MoveActionGoal:xarm_gripper/MoveFeedback:xarm_gripper/MoveGoal:xarm_gripper/MoveActionFeedback:actionlib_msgs/GoalStatus:xarm_gripper/MoveResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
 add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg" "xarm_gripper/MoveGoal:std_msgs/Header:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg" "xarm_gripper/MoveGoal:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
 add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg" "actionlib_msgs/GoalStatus:xarm_gripper/MoveResult:std_msgs/Header:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg" "actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:xarm_gripper/MoveResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
 add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" "xarm_gripper/MoveFeedback:actionlib_msgs/GoalStatus:std_msgs/Header:actionlib_msgs/GoalID"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" "xarm_gripper/MoveFeedback:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
 add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
 add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg" ""
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
 add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_gripper" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg" ""
 )
 
 #
@@ -59,43 +59,43 @@ add_custom_target(_xarm_gripper_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_cpp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_cpp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_cpp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_cpp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
-)
-_generate_msg_cpp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_cpp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
+)
+_generate_msg_cpp(xarm_gripper
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_gripper
@@ -115,19 +115,19 @@ add_custom_target(xarm_gripper_generate_messages_cpp
 add_dependencies(xarm_gripper_generate_messages xarm_gripper_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_cpp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_cpp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_cpp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_cpp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_cpp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_cpp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_cpp _xarm_gripper_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -140,43 +140,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_gripper_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_eus(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_eus(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_eus(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_eus(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
-)
-_generate_msg_eus(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_eus(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
+)
+_generate_msg_eus(xarm_gripper
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_gripper
@@ -196,19 +196,19 @@ add_custom_target(xarm_gripper_generate_messages_eus
 add_dependencies(xarm_gripper_generate_messages xarm_gripper_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_eus _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_eus _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_eus _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_eus _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_eus _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_eus _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_eus _xarm_gripper_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -221,43 +221,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_gripper_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_lisp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_lisp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_lisp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_lisp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
-)
-_generate_msg_lisp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_lisp(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
+)
+_generate_msg_lisp(xarm_gripper
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_gripper
@@ -277,19 +277,19 @@ add_custom_target(xarm_gripper_generate_messages_lisp
 add_dependencies(xarm_gripper_generate_messages xarm_gripper_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_lisp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_lisp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_lisp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_lisp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_lisp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_lisp _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_lisp _xarm_gripper_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -302,43 +302,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_gripper_generate_messages_lisp
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_nodejs(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_nodejs(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_nodejs(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_nodejs(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
-)
-_generate_msg_nodejs(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_nodejs(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
+)
+_generate_msg_nodejs(xarm_gripper
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_gripper
@@ -358,19 +358,19 @@ add_custom_target(xarm_gripper_generate_messages_nodejs
 add_dependencies(xarm_gripper_generate_messages xarm_gripper_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_nodejs _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_nodejs _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_nodejs _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_nodejs _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_nodejs _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_nodejs _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_nodejs _xarm_gripper_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -383,43 +383,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_gripper_generate_messages_node
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_py(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_py(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_py(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/noetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_py(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
-)
-_generate_msg_py(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
 )
 _generate_msg_py(xarm_gripper
-  "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
+)
+_generate_msg_py(xarm_gripper
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_gripper
@@ -439,19 +439,19 @@ add_custom_target(xarm_gripper_generate_messages_py
 add_dependencies(xarm_gripper_generate_messages xarm_gripper_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_py _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_py _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_py _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_py _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_py _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_py _xarm_gripper_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg" NAME_WE)
 add_dependencies(xarm_gripper_generate_messages_py _xarm_gripper_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

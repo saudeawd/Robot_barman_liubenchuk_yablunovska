@@ -48,13 +48,25 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -80,6 +92,27 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -102,49 +135,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_controller/CMakeFiles/progress.marks
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_controller/CMakeFiles/progress.marks
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/clean
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,82 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule
-
-# Convenience name for target.
-xarm_combined_traj_controller: xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule
-
-.PHONY : xarm_combined_traj_controller
-
-# fast build rule for target.
-xarm_combined_traj_controller/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build
-.PHONY : xarm_combined_traj_controller/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule
-
-# Convenience name for target.
-xarm_hw: xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule
-
-.PHONY : xarm_hw
-
-# fast build rule for target.
-xarm_hw/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build
-.PHONY : xarm_hw/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-# Convenience name for target.
 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -239,27 +179,12 @@ controller_manager_msgs_generate_messages_cpp: xarm_ros/xarm_controller/CMakeFil
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
 .PHONY : controller_manager_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-# Convenience name for target.
 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +194,12 @@ controller_manager_msgs_generate_messages_eus: xarm_ros/xarm_controller/CMakeFil
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
 .PHONY : controller_manager_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -284,42 +209,12 @@ controller_manager_msgs_generate_messages_lisp: xarm_ros/xarm_controller/CMakeFi
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
 .PHONY : controller_manager_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule
-
-# Convenience name for target.
-xarm_combined_hw: xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule
-
-.PHONY : xarm_combined_hw
-
-# fast build rule for target.
-xarm_combined_hw/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build
-.PHONY : xarm_combined_hw/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_nodejs: xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
-.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -329,117 +224,57 @@ controller_manager_msgs_generate_messages_py: xarm_ros/xarm_controller/CMakeFile
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
 .PHONY : controller_manager_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/control_toolbox_gencfg.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/control_toolbox_gencfg.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/control_toolbox_gencfg.dir/rule
+xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+.PHONY : xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-control_toolbox_gencfg: xarm_ros/xarm_controller/CMakeFiles/control_toolbox_gencfg.dir/rule
+controller_manager_msgs_generate_messages_nodejs: xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : control_toolbox_gencfg
+.PHONY : controller_manager_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-control_toolbox_gencfg/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/control_toolbox_gencfg.dir/build.make xarm_ros/xarm_controller/CMakeFiles/control_toolbox_gencfg.dir/build
-.PHONY : control_toolbox_gencfg/fast
+controller_manager_msgs_generate_messages_nodejs/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_controller/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
+xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule
+.PHONY : xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule
 
 # Convenience name for target.
-control_toolbox_generate_messages_cpp: xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
+xarm_combined_hw: xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/rule
 
-.PHONY : control_toolbox_generate_messages_cpp
+.PHONY : xarm_combined_hw
 
 # fast build rule for target.
-control_toolbox_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
-.PHONY : control_toolbox_generate_messages_cpp/fast
+xarm_combined_hw/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build
+.PHONY : xarm_combined_hw/fast
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule
+.PHONY : xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_py: xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+xarm_hw: xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_py
+.PHONY : xarm_hw
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-control_toolbox_generate_messages_eus: xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
-
-.PHONY : control_toolbox_generate_messages_eus
-
-# fast build rule for target.
-control_toolbox_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_eus.dir/build.make xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_eus.dir/build
-.PHONY : control_toolbox_generate_messages_eus/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule
-
-# Convenience name for target.
-uf_ros_controller: xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule
-
-.PHONY : uf_ros_controller
-
-# fast build rule for target.
-uf_ros_controller/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build
-.PHONY : uf_ros_controller/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-control_toolbox_generate_messages_lisp: xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
-
-.PHONY : control_toolbox_generate_messages_lisp
-
-# fast build rule for target.
-control_toolbox_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
-.PHONY : control_toolbox_generate_messages_lisp/fast
+xarm_hw/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build
+.PHONY : xarm_hw/fast
 
 # Convenience name for target.
 xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/rule
 .PHONY : xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/rule
 
 # Convenience name for target.
@@ -449,53 +284,38 @@ sample_motion: xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/rule
 
 # fast build rule for target.
 sample_motion/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build
 .PHONY : sample_motion/fast
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule
+.PHONY : xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_eus: xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+uf_ros_controller: xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_eus
+.PHONY : uf_ros_controller
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make xarm_ros/xarm_controller/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+uf_ros_controller/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build
+.PHONY : uf_ros_controller/fast
 
 # Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule
+xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule
+.PHONY : xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule
 
 # Convenience name for target.
-control_toolbox_generate_messages_nodejs: xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule
+xarm_combined_traj_controller: xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/rule
 
-.PHONY : control_toolbox_generate_messages_nodejs
+.PHONY : xarm_combined_traj_controller
 
 # fast build rule for target.
-control_toolbox_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build.make xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build
-.PHONY : control_toolbox_generate_messages_nodejs/fast
-
-# Convenience name for target.
-xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
-.PHONY : xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
-
-# Convenience name for target.
-control_toolbox_generate_messages_py: xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
-
-.PHONY : control_toolbox_generate_messages_py
-
-# fast build rule for target.
-control_toolbox_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make xarm_ros/xarm_controller/CMakeFiles/control_toolbox_generate_messages_py.dir/build
-.PHONY : control_toolbox_generate_messages_py/fast
+xarm_combined_traj_controller/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build
+.PHONY : xarm_combined_traj_controller/fast
 
 src/sample_motion.o: src/sample_motion.cpp.o
 
@@ -503,7 +323,7 @@ src/sample_motion.o: src/sample_motion.cpp.o
 
 # target to build an object file
 src/sample_motion.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/src/sample_motion.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/src/sample_motion.cpp.o
 .PHONY : src/sample_motion.cpp.o
 
 src/sample_motion.i: src/sample_motion.cpp.i
@@ -512,7 +332,7 @@ src/sample_motion.i: src/sample_motion.cpp.i
 
 # target to preprocess a source file
 src/sample_motion.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/src/sample_motion.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/src/sample_motion.cpp.i
 .PHONY : src/sample_motion.cpp.i
 
 src/sample_motion.s: src/sample_motion.cpp.s
@@ -521,7 +341,7 @@ src/sample_motion.s: src/sample_motion.cpp.s
 
 # target to generate assembly for a file
 src/sample_motion.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/src/sample_motion.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/build.make xarm_ros/xarm_controller/CMakeFiles/sample_motion.dir/src/sample_motion.cpp.s
 .PHONY : src/sample_motion.cpp.s
 
 src/xarm_combined_control_node.o: src/xarm_combined_control_node.cpp.o
@@ -530,7 +350,7 @@ src/xarm_combined_control_node.o: src/xarm_combined_control_node.cpp.o
 
 # target to build an object file
 src/xarm_combined_control_node.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/src/xarm_combined_control_node.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/src/xarm_combined_control_node.cpp.o
 .PHONY : src/xarm_combined_control_node.cpp.o
 
 src/xarm_combined_control_node.i: src/xarm_combined_control_node.cpp.i
@@ -539,7 +359,7 @@ src/xarm_combined_control_node.i: src/xarm_combined_control_node.cpp.i
 
 # target to preprocess a source file
 src/xarm_combined_control_node.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/src/xarm_combined_control_node.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/src/xarm_combined_control_node.cpp.i
 .PHONY : src/xarm_combined_control_node.cpp.i
 
 src/xarm_combined_control_node.s: src/xarm_combined_control_node.cpp.s
@@ -548,7 +368,7 @@ src/xarm_combined_control_node.s: src/xarm_combined_control_node.cpp.s
 
 # target to generate assembly for a file
 src/xarm_combined_control_node.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/src/xarm_combined_control_node.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_traj_controller.dir/src/xarm_combined_control_node.cpp.s
 .PHONY : src/xarm_combined_control_node.cpp.s
 
 src/xarm_combined_hw.o: src/xarm_combined_hw.cpp.o
@@ -557,7 +377,7 @@ src/xarm_combined_hw.o: src/xarm_combined_hw.cpp.o
 
 # target to build an object file
 src/xarm_combined_hw.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/src/xarm_combined_hw.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/src/xarm_combined_hw.cpp.o
 .PHONY : src/xarm_combined_hw.cpp.o
 
 src/xarm_combined_hw.i: src/xarm_combined_hw.cpp.i
@@ -566,7 +386,7 @@ src/xarm_combined_hw.i: src/xarm_combined_hw.cpp.i
 
 # target to preprocess a source file
 src/xarm_combined_hw.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/src/xarm_combined_hw.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/src/xarm_combined_hw.cpp.i
 .PHONY : src/xarm_combined_hw.cpp.i
 
 src/xarm_combined_hw.s: src/xarm_combined_hw.cpp.s
@@ -575,7 +395,7 @@ src/xarm_combined_hw.s: src/xarm_combined_hw.cpp.s
 
 # target to generate assembly for a file
 src/xarm_combined_hw.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/src/xarm_combined_hw.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_combined_hw.dir/src/xarm_combined_hw.cpp.s
 .PHONY : src/xarm_combined_hw.cpp.s
 
 src/xarm_control_node.o: src/xarm_control_node.cpp.o
@@ -584,7 +404,7 @@ src/xarm_control_node.o: src/xarm_control_node.cpp.o
 
 # target to build an object file
 src/xarm_control_node.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/src/xarm_control_node.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/src/xarm_control_node.cpp.o
 .PHONY : src/xarm_control_node.cpp.o
 
 src/xarm_control_node.i: src/xarm_control_node.cpp.i
@@ -593,7 +413,7 @@ src/xarm_control_node.i: src/xarm_control_node.cpp.i
 
 # target to preprocess a source file
 src/xarm_control_node.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/src/xarm_control_node.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/src/xarm_control_node.cpp.i
 .PHONY : src/xarm_control_node.cpp.i
 
 src/xarm_control_node.s: src/xarm_control_node.cpp.s
@@ -602,7 +422,7 @@ src/xarm_control_node.s: src/xarm_control_node.cpp.s
 
 # target to generate assembly for a file
 src/xarm_control_node.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/src/xarm_control_node.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/build.make xarm_ros/xarm_controller/CMakeFiles/uf_ros_controller.dir/src/xarm_control_node.cpp.s
 .PHONY : src/xarm_control_node.cpp.s
 
 src/xarm_hw.o: src/xarm_hw.cpp.o
@@ -611,7 +431,7 @@ src/xarm_hw.o: src/xarm_hw.cpp.o
 
 # target to build an object file
 src/xarm_hw.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/src/xarm_hw.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/src/xarm_hw.cpp.o
 .PHONY : src/xarm_hw.cpp.o
 
 src/xarm_hw.i: src/xarm_hw.cpp.i
@@ -620,7 +440,7 @@ src/xarm_hw.i: src/xarm_hw.cpp.i
 
 # target to preprocess a source file
 src/xarm_hw.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/src/xarm_hw.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/src/xarm_hw.cpp.i
 .PHONY : src/xarm_hw.cpp.i
 
 src/xarm_hw.s: src/xarm_hw.cpp.s
@@ -629,7 +449,7 @@ src/xarm_hw.s: src/xarm_hw.cpp.s
 
 # target to generate assembly for a file
 src/xarm_hw.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/src/xarm_hw.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/build.make xarm_ros/xarm_controller/CMakeFiles/xarm_hw.dir/src/xarm_hw.cpp.s
 .PHONY : src/xarm_hw.cpp.s
 
 # Help Target
@@ -638,35 +458,23 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... list_install_components"
-	@echo "... xarm_combined_traj_controller"
-	@echo "... xarm_hw"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... test"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... controller_manager_msgs_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... controller_manager_msgs_generate_messages_eus"
 	@echo "... controller_manager_msgs_generate_messages_lisp"
-	@echo "... xarm_combined_hw"
-	@echo "... controller_manager_msgs_generate_messages_nodejs"
 	@echo "... controller_manager_msgs_generate_messages_py"
-	@echo "... install/strip"
-	@echo "... control_toolbox_gencfg"
-	@echo "... control_toolbox_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... control_toolbox_generate_messages_eus"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... uf_ros_controller"
-	@echo "... control_toolbox_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... xarm_combined_hw"
+	@echo "... xarm_hw"
 	@echo "... sample_motion"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... control_toolbox_generate_messages_nodejs"
-	@echo "... control_toolbox_generate_messages_py"
+	@echo "... uf_ros_controller"
+	@echo "... list_install_components"
+	@echo "... xarm_combined_traj_controller"
+	@echo "... test"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... src/sample_motion.o"
 	@echo "... src/sample_motion.i"
 	@echo "... src/sample_motion.s"
@@ -693,6 +501,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

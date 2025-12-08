@@ -1,8 +1,8 @@
-# Install script for directory: /home/liubenchuk/xarm_ws/src
+# Install script for directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liubenchuk/xarm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,130 +49,132 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liubenchuk/xarm_ws/install/_setup_util.py")
+   "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liubenchuk/xarm_ws/install" TYPE PROGRAM FILES "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install" TYPE PROGRAM FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liubenchuk/xarm_ws/install/env.sh")
+   "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liubenchuk/xarm_ws/install" TYPE PROGRAM FILES "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install" TYPE PROGRAM FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liubenchuk/xarm_ws/install/setup.bash;/home/liubenchuk/xarm_ws/install/local_setup.bash")
+   "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/setup.bash;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liubenchuk/xarm_ws/install" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install" TYPE FILE FILES
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/setup.bash"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liubenchuk/xarm_ws/install/setup.sh;/home/liubenchuk/xarm_ws/install/local_setup.sh")
+   "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/setup.sh;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liubenchuk/xarm_ws/install" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install" TYPE FILE FILES
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/setup.sh"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liubenchuk/xarm_ws/install/setup.zsh;/home/liubenchuk/xarm_ws/install/local_setup.zsh")
+   "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/setup.zsh;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liubenchuk/xarm_ws/install" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install" TYPE FILE FILES
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/setup.zsh"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liubenchuk/xarm_ws/install/setup.fish;/home/liubenchuk/xarm_ws/install/local_setup.fish")
+   "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/setup.fish;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/local_setup.fish")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liubenchuk/xarm_ws/install" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/setup.fish"
-    "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/local_setup.fish"
+file(INSTALL DESTINATION "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install" TYPE FILE FILES
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/setup.fish"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/local_setup.fish"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/liubenchuk/xarm_ws/install/.rosinstall")
+   "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/liubenchuk/xarm_ws/install" TYPE FILE FILES "/home/liubenchuk/xarm_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/liubenchuk/xarm_ws/build/gtest/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/examples/multi_xarm5/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_bringup/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_description/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/dual_xarm6_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/lite6_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/uf_robot_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm5_gripper_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm5_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/examples/xarm5_vacuum_gripper_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm6_gripper_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm6_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/examples/xarm6_vacuum_gripper_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm7_gripper_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm7_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/examples/xarm7_vacuum_gripper_moveit_config/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_msgs/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_sdk/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_vision/camera_demo/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/examples/xarm7_redundancy_res/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/examples/run_recorded_traj/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_controller/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gazebo/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_moveit_servo/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_planner/cmake_install.cmake")
-  include("/home/liubenchuk/xarm_ws/build/xarm_ros/xarm_vision/d435i_xarm_setup/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/gtest/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/multi_xarm5/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_bringup/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_description/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/dual_xarm6_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/lite6_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/uf_robot_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm5_gripper_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm5_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/xarm5_vacuum_gripper_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm6_gripper_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm6_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/xarm6_vacuum_gripper_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm7_gripper_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm7_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/xarm7_vacuum_gripper_moveit_config/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_msgs/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_sdk/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_vision/camera_demo/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/roboticsgroup_gazebo_plugins/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/cup_detection/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/xarm7_redundancy_res/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/run_recorded_traj/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_controller/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gazebo/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_moveit_servo/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_planner/cmake_install.cmake")
+  include("/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_vision/d435i_xarm_setup/cmake_install.cmake")
 
 endif()
 
@@ -184,5 +186,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/liubenchuk/xarm_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

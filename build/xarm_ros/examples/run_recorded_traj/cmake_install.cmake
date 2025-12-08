@@ -1,8 +1,8 @@
-# Install script for directory: /home/liubenchuk/xarm_ws/src/xarm_ros/examples/run_recorded_traj
+# Install script for directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/examples/run_recorded_traj
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/liubenchuk/xarm_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,22 +38,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liubenchuk/xarm_ws/build/xarm_ros/examples/run_recorded_traj/catkin_generated/installspace/run_recorded_traj.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/run_recorded_traj/catkin_generated/installspace/run_recorded_traj.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/run_recorded_traj/cmake" TYPE FILE FILES
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/examples/run_recorded_traj/catkin_generated/installspace/run_recorded_trajConfig.cmake"
-    "/home/liubenchuk/xarm_ws/build/xarm_ros/examples/run_recorded_traj/catkin_generated/installspace/run_recorded_trajConfig-version.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/run_recorded_traj/catkin_generated/installspace/run_recorded_trajConfig.cmake"
+    "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/run_recorded_traj/catkin_generated/installspace/run_recorded_trajConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/run_recorded_traj" TYPE FILE FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/examples/run_recorded_traj/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/run_recorded_traj" TYPE FILE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/examples/run_recorded_traj/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/run_recorded_traj" TYPE DIRECTORY FILES "/home/liubenchuk/xarm_ws/src/xarm_ros/examples/run_recorded_traj/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/run_recorded_traj" TYPE DIRECTORY FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/examples/run_recorded_traj/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,12 +63,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/run_recorded_traj/xarm_traj_test"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/run_recorded_traj" TYPE EXECUTABLE FILES "/home/liubenchuk/xarm_ws/devel/lib/run_recorded_traj/xarm_traj_test")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/run_recorded_traj" TYPE EXECUTABLE FILES "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/run_recorded_traj/xarm_traj_test")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/run_recorded_traj/xarm_traj_test" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/run_recorded_traj/xarm_traj_test")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/run_recorded_traj/xarm_traj_test"
-         OLD_RPATH "/home/liubenchuk/xarm_ws/devel/lib:/opt/ros/noetic/lib:"
+         OLD_RPATH "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib:/opt/ros/noetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/run_recorded_traj/xarm_traj_test")

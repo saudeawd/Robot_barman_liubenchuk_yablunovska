@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_tool_modbus"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_tool_modbus.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_tool_modbus"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_tool_modbus.pdb"
   "CMakeFiles/test_tool_modbus.dir/test/test_tool_modbus.cpp.o"
 )
 

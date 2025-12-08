@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_msgs/CMakeFiles/progress.marks
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_msgs/CMakeFiles/progress.marks
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/clean
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ xarm_msgs_generate_messages_lisp: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genera
 
 # fast build rule for target.
 xarm_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_lisp.dir/build
 .PHONY : xarm_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ xarm_msgs_generate_messages_eus: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generat
 
 # fast build rule for target.
 xarm_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_eus.dir/build
 .PHONY : xarm_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ xarm_msgs_geneus: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/rule
 
 # fast build rule for target.
 xarm_msgs_geneus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_geneus.dir/build
 .PHONY : xarm_msgs_geneus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ xarm_msgs_generate_messages_cpp: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generat
 
 # fast build rule for target.
 xarm_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_cpp.dir/build
 .PHONY : xarm_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ _xarm_msgs_generate_messages_check_deps_FtCaliLoad: xarm_ros/xarm_msgs/CMakeFile
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_FtCaliLoad/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtCaliLoad.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_FtCaliLoad/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ _xarm_msgs_generate_messages_check_deps_Call: xarm_ros/xarm_msgs/CMakeFiles/_xar
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_Call/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Call.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_Call/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ _xarm_msgs_generate_messages_check_deps_GetSetModbusData: xarm_ros/xarm_msgs/CMa
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GetSetModbusData/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetSetModbusData.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GetSetModbusData/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ xarm_msgs_genlisp: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/rule
 
 # fast build rule for target.
 xarm_msgs_genlisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genlisp.dir/build
 .PHONY : xarm_msgs_genlisp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ _xarm_msgs_generate_messages_check_deps_GetInt32: xarm_ros/xarm_msgs/CMakeFiles/
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GetInt32/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetInt32.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GetInt32/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ _xarm_msgs_generate_messages_check_deps_GetFloat32List: xarm_ros/xarm_msgs/CMake
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GetFloat32List/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetFloat32List.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GetFloat32List/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ _xarm_msgs_generate_messages_check_deps_PlayTraj: xarm_ros/xarm_msgs/CMakeFiles/
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_PlayTraj/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_PlayTraj.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_PlayTraj/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _xarm_msgs_generate_messages_check_deps_SetString: xarm_ros/xarm_msgs/CMakeFiles
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetString/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetString.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetString/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ _xarm_msgs_generate_messages_check_deps_SetMultipleInts: xarm_ros/xarm_msgs/CMak
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetMultipleInts/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetMultipleInts.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetMultipleInts/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ _xarm_msgs_generate_messages_check_deps_SetFloat32: xarm_ros/xarm_msgs/CMakeFile
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetFloat32/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetFloat32.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetFloat32/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ _xarm_msgs_generate_messages_check_deps_MoveVelocity: xarm_ros/xarm_msgs/CMakeFi
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_MoveVelocity/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelocity.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_MoveVelocity/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ xarm_msgs_gennodejs: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/rule
 
 # fast build rule for target.
 xarm_msgs_gennodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gennodejs.dir/build
 .PHONY : xarm_msgs_gennodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ xarm_msgs_generate_messages_nodejs: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gene
 
 # fast build rule for target.
 xarm_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_nodejs.dir/build
 .PHONY : xarm_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ _xarm_msgs_generate_messages_check_deps_GetDigitalIO: xarm_ros/xarm_msgs/CMakeFi
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GetDigitalIO/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetDigitalIO.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GetDigitalIO/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ xarm_msgs_gencpp: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/rule
 
 # fast build rule for target.
 xarm_msgs_gencpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_gencpp.dir/build
 .PHONY : xarm_msgs_gencpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ _xarm_msgs_generate_messages_check_deps_IOState: xarm_ros/xarm_msgs/CMakeFiles/_
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_IOState/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_IOState.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_IOState/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ std_msgs_generate_messages_cpp: xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ _xarm_msgs_generate_messages_check_deps_RobotMsg: xarm_ros/xarm_msgs/CMakeFiles/
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_RobotMsg/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_RobotMsg.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_RobotMsg/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ _xarm_msgs_generate_messages_check_deps_SetInt16: xarm_ros/xarm_msgs/CMakeFiles/
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetInt16/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetInt16.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetInt16/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ _xarm_msgs_generate_messages_check_deps_GripperState: xarm_ros/xarm_msgs/CMakeFi
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GripperState/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperState.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GripperState/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ std_msgs_generate_messages_py: xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_m
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ _xarm_msgs_generate_messages_check_deps_CIOState: xarm_ros/xarm_msgs/CMakeFiles/
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_CIOState/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_CIOState.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_CIOState/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ xarm_msgs_generate_messages_py: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate
 
 # fast build rule for target.
 xarm_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages_py.dir/build
 .PHONY : xarm_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ _xarm_msgs_generate_messages_check_deps_SetModbusTimeout: xarm_ros/xarm_msgs/CMa
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetModbusTimeout/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetModbusTimeout.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetModbusTimeout/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ std_msgs_generate_messages_nodejs: xarm_ros/xarm_msgs/CMakeFiles/std_msgs_genera
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ _xarm_msgs_generate_messages_check_deps_GetErr: xarm_ros/xarm_msgs/CMakeFiles/_x
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GetErr/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetErr.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GetErr/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ std_msgs_generate_messages_lisp: xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ std_msgs_generate_messages_eus: xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ _xarm_msgs_generate_messages_check_deps_FtIdenLoad: xarm_ros/xarm_msgs/CMakeFile
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_FtIdenLoad/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_FtIdenLoad.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_FtIdenLoad/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ _xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO: xarm_ros/xarm_ms
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GetControllerDigitalIO/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ xarm_msgs_genpy: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/rule
 
 # fast build rule for target.
 xarm_msgs_genpy/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_genpy.dir/build
 .PHONY : xarm_msgs_genpy/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ _xarm_msgs_generate_messages_check_deps_MoveAxisAngle: xarm_ros/xarm_msgs/CMakeF
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_MoveAxisAngle/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveAxisAngle.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_MoveAxisAngle/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ _xarm_msgs_generate_messages_check_deps_VeloMoveMsg: xarm_ros/xarm_msgs/CMakeFil
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_VeloMoveMsg/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VeloMoveMsg.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_VeloMoveMsg/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ _xarm_msgs_generate_messages_check_deps_TCPOffset: xarm_ros/xarm_msgs/CMakeFiles
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_TCPOffset/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_TCPOffset.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_TCPOffset/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ _xarm_msgs_generate_messages_check_deps_ClearErr: xarm_ros/xarm_msgs/CMakeFiles/
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_ClearErr/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ClearErr.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_ClearErr/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ _xarm_msgs_generate_messages_check_deps_GripperMove: xarm_ros/xarm_msgs/CMakeFil
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GripperMove/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperMove.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GripperMove/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ _xarm_msgs_generate_messages_check_deps_MoveVelo: xarm_ros/xarm_msgs/CMakeFiles/
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_MoveVelo/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_MoveVelo.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_MoveVelo/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ _xarm_msgs_generate_messages_check_deps_GetAnalogIO: xarm_ros/xarm_msgs/CMakeFil
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GetAnalogIO/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GetAnalogIO.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GetAnalogIO/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ _xarm_msgs_generate_messages_check_deps_Move: xarm_ros/xarm_msgs/CMakeFiles/_xar
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_Move/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_Move.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_Move/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ _xarm_msgs_generate_messages_check_deps_GripperConfig: xarm_ros/xarm_msgs/CMakeF
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_GripperConfig/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_GripperConfig.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_GripperConfig/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ xarm_msgs_generate_messages: xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_me
 
 # fast build rule for target.
 xarm_msgs_generate_messages/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/xarm_msgs_generate_messages.dir/build
 .PHONY : xarm_msgs_generate_messages/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ _xarm_msgs_generate_messages_check_deps_SetLoad: xarm_ros/xarm_msgs/CMakeFiles/_
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetLoad/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetLoad.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetLoad/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/rule
 
 # Convenience name for target.
@@ -869,12 +869,12 @@ _xarm_msgs_generate_messages_check_deps_SetToolModbus: xarm_ros/xarm_msgs/CMakeF
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetToolModbus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetToolModbus.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetToolModbus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/rule
 
 # Convenience name for target.
@@ -884,12 +884,12 @@ _xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl: xarm_ros/xarm_msgs/CM
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_VacuumGripperCtrl/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/rule
 
 # Convenience name for target.
@@ -899,12 +899,12 @@ _xarm_msgs_generate_messages_check_deps_SetDigitalIO: xarm_ros/xarm_msgs/CMakeFi
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetDigitalIO/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetDigitalIO.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetDigitalIO/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/rule
 
 # Convenience name for target.
@@ -914,12 +914,12 @@ _xarm_msgs_generate_messages_check_deps_ConfigToolModbus: xarm_ros/xarm_msgs/CMa
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_ConfigToolModbus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_ConfigToolModbus.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_ConfigToolModbus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/rule
 
 # Convenience name for target.
@@ -929,12 +929,12 @@ _xarm_msgs_generate_messages_check_deps_SetAxis: xarm_ros/xarm_msgs/CMakeFiles/_
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetAxis/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetAxis.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetAxis/fast
 
 # Convenience name for target.
 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/rule
 .PHONY : xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/rule
 
 # Convenience name for target.
@@ -944,7 +944,7 @@ _xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO: xarm_ros/xarm_msg
 
 # fast build rule for target.
 _xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/build.make xarm_ros/xarm_msgs/CMakeFiles/_xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO.dir/build
 .PHONY : _xarm_msgs_generate_messages_check_deps_SetControllerAnalogIO/fast
 
 # Help Target
@@ -1023,6 +1023,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

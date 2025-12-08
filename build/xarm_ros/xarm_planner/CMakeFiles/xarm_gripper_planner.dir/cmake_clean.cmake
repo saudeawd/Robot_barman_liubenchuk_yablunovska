@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_planner/xarm_gripper_planner"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_planner/xarm_gripper_planner.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_planner/xarm_gripper_planner"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_planner/xarm_gripper_planner.pdb"
   "CMakeFiles/xarm_gripper_planner.dir/src/xarm_gripper_planner.cpp.o"
 )
 

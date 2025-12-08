@@ -1,4 +1,4 @@
-prefix=/home/liubenchuk/xarm_ws/install
+prefix=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install
 
 Name: xarm6_moveit_config
 Description: Description of xarm6_moveit_config

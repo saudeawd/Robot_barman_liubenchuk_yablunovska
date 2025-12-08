@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller/src/sample_motion.cpp
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller/src/sample_motion.cpp
 ros/ros.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller/src/ros/ros.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller/src/ros/ros.h
 std_msgs/Float64.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_controller/src/std_msgs/Float64.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_controller/src/std_msgs/Float64.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

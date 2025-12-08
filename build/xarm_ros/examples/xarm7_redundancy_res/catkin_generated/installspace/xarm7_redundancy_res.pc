@@ -1,4 +1,4 @@
-prefix=/home/liubenchuk/xarm_ws/install
+prefix=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install
 
 Name: xarm7_redundancy_res
 Description: Description of xarm7_redundancy_res

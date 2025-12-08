@@ -1,4 +1,4 @@
-prefix=/home/liubenchuk/xarm_ws/install
+prefix=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/install
 
 Name: xarm7_vacuum_gripper_moveit_config
 Description: Description of xarm7_vacuum_gripper_moveit_config

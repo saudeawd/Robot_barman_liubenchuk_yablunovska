@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_gripper/MoveAction.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_gripper/MoveAction.h
 string
 -
 vector
@@ -28,7 +28,7 @@ xarm_gripper/MoveActionResult.h
 xarm_gripper/MoveActionFeedback.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_gripper/MoveActionFeedback.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_gripper/MoveActionFeedback.h
 string
 -
 vector
@@ -50,7 +50,7 @@ actionlib_msgs/GoalStatus.h
 xarm_gripper/MoveFeedback.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_gripper/MoveActionGoal.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_gripper/MoveActionGoal.h
 string
 -
 vector
@@ -72,7 +72,7 @@ actionlib_msgs/GoalID.h
 xarm_gripper/MoveGoal.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_gripper/MoveActionResult.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_gripper/MoveActionResult.h
 string
 -
 vector
@@ -94,7 +94,7 @@ actionlib_msgs/GoalStatus.h
 xarm_gripper/MoveResult.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_gripper/MoveFeedback.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_gripper/MoveFeedback.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_gripper/MoveGoal.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_gripper/MoveGoal.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_gripper/MoveResult.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_gripper/MoveResult.h
 string
 -
 vector
@@ -142,7 +142,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_gripper/src/gripper_client.cpp
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_gripper/src/gripper_client.cpp
 ros/ros.h
 -
 actionlib/client/simple_action_client.h

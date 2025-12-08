@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv;/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv;/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv;/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
+services_str = "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv;/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
 pkg_name = "xarm_planner"
 dependencies_str = "geometry_msgs;std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

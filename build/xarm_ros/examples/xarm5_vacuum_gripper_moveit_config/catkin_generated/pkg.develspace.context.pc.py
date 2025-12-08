@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "xarm5_vacuum_gripper_moveit_config"
-PROJECT_SPACE_DIR = "/home/liubenchuk/xarm_ws/devel"
+PROJECT_SPACE_DIR = "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel"
 PROJECT_VERSION = "0.3.0"

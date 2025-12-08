@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_xarm_ros_client"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_xarm_ros_client.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_xarm_ros_client"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_xarm_ros_client.pdb"
   "CMakeFiles/test_xarm_ros_client.dir/test/test_xarm_ros_client.cpp.o"
 )
 

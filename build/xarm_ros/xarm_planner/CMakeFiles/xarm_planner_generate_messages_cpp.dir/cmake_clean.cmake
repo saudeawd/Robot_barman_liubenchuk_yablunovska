@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/include/xarm_planner/exec_plan.h"
-  "/home/liubenchuk/xarm_ws/devel/include/xarm_planner/joint_plan.h"
-  "/home/liubenchuk/xarm_ws/devel/include/xarm_planner/pose_plan.h"
-  "/home/liubenchuk/xarm_ws/devel/include/xarm_planner/single_straight_plan.h"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/exec_plan.h"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/joint_plan.h"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/pose_plan.h"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/single_straight_plan.h"
   "CMakeFiles/xarm_planner_generate_messages_cpp"
 )
 

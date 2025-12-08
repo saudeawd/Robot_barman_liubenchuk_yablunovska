@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,16 +80,16 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -101,6 +101,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -124,27 +135,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # The main all target
 all: cmake_check_build_system
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_moveit_servo/CMakeFiles/progress.marks
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_moveit_servo/CMakeFiles/progress.marks
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/clean
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,112 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule
-
-# Convenience name for target.
-xarm_joy_to_servo_node: xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule
-
-.PHONY : xarm_joy_to_servo_node
-
-# fast build rule for target.
-xarm_joy_to_servo_node/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build
-.PHONY : xarm_joy_to_servo_node/fast
-
-# Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
-
-# Convenience name for target.
-moveit_ros_manipulation_gencfg: xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
-
-.PHONY : moveit_ros_manipulation_gencfg
-
-# fast build rule for target.
-moveit_ros_manipulation_gencfg/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
-.PHONY : moveit_ros_manipulation_gencfg/fast
-
-# Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-.PHONY : tf_generate_messages_nodejs
-
-# fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
-
-# Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-tf2_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
-.PHONY : tf2_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -269,12 +179,12 @@ shape_msgs_generate_messages_py: xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msg
 
 # fast build rule for target.
 shape_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_py.dir/build
 .PHONY : shape_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -284,12 +194,27 @@ octomap_msgs_generate_messages_eus: xarm_ros/xarm_moveit_servo/CMakeFiles/octoma
 
 # fast build rule for target.
 octomap_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_eus.dir/build
 .PHONY : octomap_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule
+.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule
+
+# Convenience name for target.
+xarm_joy_to_servo_node: xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/rule
+
+.PHONY : xarm_joy_to_servo_node
+
+# fast build rule for target.
+xarm_joy_to_servo_node/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build
+.PHONY : xarm_joy_to_servo_node/fast
+
+# Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -299,27 +224,12 @@ object_recognition_msgs_generate_messages_eus: xarm_ros/xarm_moveit_servo/CMakeF
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/build
 .PHONY : object_recognition_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_py.dir/rule
-
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-# Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +239,12 @@ shape_msgs_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMakeFiles/shape
 
 # fast build rule for target.
 shape_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/build
 .PHONY : shape_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -344,12 +254,12 @@ object_recognition_msgs_generate_messages_py: xarm_ros/xarm_moveit_servo/CMakeFi
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
 .PHONY : object_recognition_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -359,27 +269,12 @@ shape_msgs_generate_messages_lisp: xarm_ros/xarm_moveit_servo/CMakeFiles/shape_m
 
 # fast build rule for target.
 shape_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
 .PHONY : shape_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -389,42 +284,12 @@ shape_msgs_generate_messages_eus: xarm_ros/xarm_moveit_servo/CMakeFiles/shape_ms
 
 # fast build rule for target.
 shape_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_eus.dir/build
 .PHONY : shape_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_eus.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_eus: xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-.PHONY : tf_generate_messages_eus
-
-# fast build rule for target.
-tf_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
-
-# Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_cpp: xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -434,27 +299,12 @@ shape_msgs_generate_messages_cpp: xarm_ros/xarm_moveit_servo/CMakeFiles/shape_ms
 
 # fast build rule for target.
 shape_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
 .PHONY : shape_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -464,12 +314,12 @@ object_recognition_msgs_generate_messages_lisp: xarm_ros/xarm_moveit_servo/CMake
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
 .PHONY : object_recognition_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -479,12 +329,12 @@ visualization_msgs_generate_messages_eus: xarm_ros/xarm_moveit_servo/CMakeFiles/
 
 # fast build rule for target.
 visualization_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -494,12 +344,12 @@ moveit_msgs_generate_messages_py: xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_m
 
 # fast build rule for target.
 moveit_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
 .PHONY : moveit_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -509,12 +359,12 @@ moveit_msgs_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMakeFiles/move
 
 # fast build rule for target.
 moveit_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/build
 .PHONY : moveit_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -524,12 +374,12 @@ moveit_msgs_generate_messages_lisp: xarm_ros/xarm_moveit_servo/CMakeFiles/moveit
 
 # fast build rule for target.
 moveit_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
 .PHONY : moveit_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -539,12 +389,12 @@ visualization_msgs_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMakeFil
 
 # fast build rule for target.
 visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 .PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -554,12 +404,12 @@ moveit_msgs_generate_messages_eus: xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_
 
 # fast build rule for target.
 moveit_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_eus.dir/build
 .PHONY : moveit_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -569,12 +419,12 @@ moveit_msgs_generate_messages_cpp: xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_
 
 # fast build rule for target.
 moveit_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
 .PHONY : moveit_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -584,12 +434,12 @@ object_recognition_msgs_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMa
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/build
 .PHONY : object_recognition_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -599,12 +449,12 @@ octomap_msgs_generate_messages_cpp: xarm_ros/xarm_moveit_servo/CMakeFiles/octoma
 
 # fast build rule for target.
 octomap_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
 .PHONY : octomap_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -614,12 +464,12 @@ octomap_msgs_generate_messages_py: xarm_ros/xarm_moveit_servo/CMakeFiles/octomap
 
 # fast build rule for target.
 octomap_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
 .PHONY : octomap_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -629,12 +479,12 @@ object_recognition_msgs_generate_messages_cpp: xarm_ros/xarm_moveit_servo/CMakeF
 
 # fast build rule for target.
 object_recognition_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
 .PHONY : object_recognition_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -644,12 +494,12 @@ visualization_msgs_generate_messages_cpp: xarm_ros/xarm_moveit_servo/CMakeFiles/
 
 # fast build rule for target.
 visualization_msgs_generate_messages_cpp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
 
 # Convenience name for target.
@@ -659,12 +509,12 @@ moveit_ros_planning_gencfg: xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_pla
 
 # fast build rule for target.
 moveit_ros_planning_gencfg/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_planning_gencfg.dir/build
 .PHONY : moveit_ros_planning_gencfg/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -674,42 +524,12 @@ octomap_msgs_generate_messages_lisp: xarm_ros/xarm_moveit_servo/CMakeFiles/octom
 
 # fast build rule for target.
 octomap_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
 .PHONY : octomap_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule
-
-# Convenience name for target.
-xarm_keyboard_to_servo_node: xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule
-
-.PHONY : xarm_keyboard_to_servo_node
-
-# fast build rule for target.
-xarm_keyboard_to_servo_node/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build
-.PHONY : xarm_keyboard_to_servo_node/fast
-
-# Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : octomap_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-octomap_msgs_generate_messages_nodejs/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
-.PHONY : octomap_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -719,12 +539,12 @@ visualization_msgs_generate_messages_lisp: xarm_ros/xarm_moveit_servo/CMakeFiles
 
 # fast build rule for target.
 visualization_msgs_generate_messages_lisp/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
 .PHONY : visualization_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 .PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -734,23 +554,53 @@ visualization_msgs_generate_messages_py: xarm_ros/xarm_moveit_servo/CMakeFiles/v
 
 # fast build rule for target.
 visualization_msgs_generate_messages_py/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
 
 # Convenience name for target.
-tf2_msgs_generate_messages_eus: xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+moveit_ros_manipulation_gencfg: xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
 
-.PHONY : tf2_msgs_generate_messages_eus
+.PHONY : moveit_ros_manipulation_gencfg
 
 # fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
+moveit_ros_manipulation_gencfg/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
+.PHONY : moveit_ros_manipulation_gencfg/fast
+
+# Convenience name for target.
+xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_nodejs: xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+octomap_msgs_generate_messages_nodejs/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
+.PHONY : octomap_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule
+.PHONY : xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule
+
+# Convenience name for target.
+xarm_keyboard_to_servo_node: xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/rule
+
+.PHONY : xarm_keyboard_to_servo_node
+
+# fast build rule for target.
+xarm_keyboard_to_servo_node/fast:
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build
+.PHONY : xarm_keyboard_to_servo_node/fast
 
 src/xarm_joystick_input.o: src/xarm_joystick_input.cpp.o
 
@@ -758,7 +608,7 @@ src/xarm_joystick_input.o: src/xarm_joystick_input.cpp.o
 
 # target to build an object file
 src/xarm_joystick_input.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/src/xarm_joystick_input.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/src/xarm_joystick_input.cpp.o
 .PHONY : src/xarm_joystick_input.cpp.o
 
 src/xarm_joystick_input.i: src/xarm_joystick_input.cpp.i
@@ -767,7 +617,7 @@ src/xarm_joystick_input.i: src/xarm_joystick_input.cpp.i
 
 # target to preprocess a source file
 src/xarm_joystick_input.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/src/xarm_joystick_input.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/src/xarm_joystick_input.cpp.i
 .PHONY : src/xarm_joystick_input.cpp.i
 
 src/xarm_joystick_input.s: src/xarm_joystick_input.cpp.s
@@ -776,7 +626,7 @@ src/xarm_joystick_input.s: src/xarm_joystick_input.cpp.s
 
 # target to generate assembly for a file
 src/xarm_joystick_input.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/src/xarm_joystick_input.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_joy_to_servo_node.dir/src/xarm_joystick_input.cpp.s
 .PHONY : src/xarm_joystick_input.cpp.s
 
 src/xarm_keyboard_input.o: src/xarm_keyboard_input.cpp.o
@@ -785,7 +635,7 @@ src/xarm_keyboard_input.o: src/xarm_keyboard_input.cpp.o
 
 # target to build an object file
 src/xarm_keyboard_input.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/src/xarm_keyboard_input.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/src/xarm_keyboard_input.cpp.o
 .PHONY : src/xarm_keyboard_input.cpp.o
 
 src/xarm_keyboard_input.i: src/xarm_keyboard_input.cpp.i
@@ -794,7 +644,7 @@ src/xarm_keyboard_input.i: src/xarm_keyboard_input.cpp.i
 
 # target to preprocess a source file
 src/xarm_keyboard_input.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/src/xarm_keyboard_input.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/src/xarm_keyboard_input.cpp.i
 .PHONY : src/xarm_keyboard_input.cpp.i
 
 src/xarm_keyboard_input.s: src/xarm_keyboard_input.cpp.s
@@ -803,7 +653,7 @@ src/xarm_keyboard_input.s: src/xarm_keyboard_input.cpp.s
 
 # target to generate assembly for a file
 src/xarm_keyboard_input.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/src/xarm_keyboard_input.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/build.make xarm_ros/xarm_moveit_servo/CMakeFiles/xarm_keyboard_to_servo_node.dir/src/xarm_keyboard_input.cpp.s
 .PHONY : src/xarm_keyboard_input.cpp.s
 
 # Help Target
@@ -814,27 +664,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... test"
-	@echo "... xarm_joy_to_servo_node"
-	@echo "... moveit_ros_manipulation_gencfg"
-	@echo "... tf_generate_messages_nodejs"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... shape_msgs_generate_messages_py"
 	@echo "... octomap_msgs_generate_messages_eus"
+	@echo "... test"
+	@echo "... xarm_joy_to_servo_node"
 	@echo "... object_recognition_msgs_generate_messages_eus"
-	@echo "... tf_generate_messages_py"
 	@echo "... shape_msgs_generate_messages_nodejs"
 	@echo "... object_recognition_msgs_generate_messages_py"
 	@echo "... shape_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... shape_msgs_generate_messages_eus"
-	@echo "... tf_generate_messages_eus"
-	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... shape_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... object_recognition_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... moveit_msgs_generate_messages_py"
@@ -851,13 +692,12 @@ help:
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... moveit_ros_planning_gencfg"
 	@echo "... octomap_msgs_generate_messages_lisp"
-	@echo "... xarm_keyboard_to_servo_node"
-	@echo "... octomap_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... install"
 	@echo "... visualization_msgs_generate_messages_py"
-	@echo "... rebuild_cache"
-	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... moveit_ros_manipulation_gencfg"
+	@echo "... octomap_msgs_generate_messages_nodejs"
+	@echo "... xarm_keyboard_to_servo_node"
 	@echo "... src/xarm_joystick_input.o"
 	@echo "... src/xarm_joystick_input.i"
 	@echo "... src/xarm_joystick_input.s"
@@ -875,6 +715,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

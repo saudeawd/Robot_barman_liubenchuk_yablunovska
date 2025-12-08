@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -std=gnu++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"xarm_api\" -Dxarm_ros_driver_EXPORTS
 
-CXX_INCLUDES = -I/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/include -I/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include -I/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_sdk/cxx/include/xarm_sdk -I/home/liubenchuk/xarm_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/include -I/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include -I/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_sdk/cxx/include/xarm_sdk -I/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

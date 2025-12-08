@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/manifest.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/msg/MoveAction.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/msg/MoveActionFeedback.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/msg/MoveActionGoal.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/msg/MoveActionResult.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/msg/MoveFeedback.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/msg/MoveGoal.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_gripper/msg/MoveResult.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/manifest.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/msg/MoveAction.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/msg/MoveActionFeedback.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/msg/MoveActionGoal.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/msg/MoveActionResult.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/msg/MoveFeedback.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/msg/MoveGoal.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_gripper/msg/MoveResult.l"
   "CMakeFiles/xarm_gripper_generate_messages_eus"
 )
 

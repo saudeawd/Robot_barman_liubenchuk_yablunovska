@@ -1,4 +1,4 @@
-prefix=/home/liubenchuk/xarm_ws/devel
+prefix=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel
 
 Name: d435i_xarm_setup
 Description: Description of d435i_xarm_setup

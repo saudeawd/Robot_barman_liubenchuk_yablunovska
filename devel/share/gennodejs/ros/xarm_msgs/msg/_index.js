@@ -1,14 +1,14 @@
 
 "use strict";
 
-let VeloMoveMsg = require('./VeloMoveMsg.js');
-let IOState = require('./IOState.js');
 let RobotMsg = require('./RobotMsg.js');
+let VeloMoveMsg = require('./VeloMoveMsg.js');
 let CIOState = require('./CIOState.js');
+let IOState = require('./IOState.js');
 
 module.exports = {
-  VeloMoveMsg: VeloMoveMsg,
-  IOState: IOState,
   RobotMsg: RobotMsg,
+  VeloMoveMsg: VeloMoveMsg,
   CIOState: CIOState,
+  IOState: IOState,
 };

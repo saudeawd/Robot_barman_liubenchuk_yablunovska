@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/run_recorded_traj/xarm_traj_test"
-  "/home/liubenchuk/xarm_ws/devel/lib/run_recorded_traj/xarm_traj_test.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/run_recorded_traj/xarm_traj_test"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/run_recorded_traj/xarm_traj_test.pdb"
   "CMakeFiles/xarm_traj_test.dir/src/xarm_traj_test.cpp.o"
 )
 

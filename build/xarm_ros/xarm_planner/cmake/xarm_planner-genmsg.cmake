@@ -17,24 +17,24 @@ add_custom_target(xarm_planner_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
 add_custom_target(_xarm_planner_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv" "geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose"
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
 add_custom_target(_xarm_planner_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv" ""
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
 add_custom_target(_xarm_planner_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv" ""
 )
 
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
 add_custom_target(_xarm_planner_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" "geometry_msgs/Pose:geometry_msgs/Quaternion:geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "xarm_planner" "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" "geometry_msgs/Point:geometry_msgs/Quaternion:geometry_msgs/Pose"
 )
 
 #
@@ -46,27 +46,27 @@ add_custom_target(_xarm_planner_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_cpp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_cpp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_cpp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/xarm_planner
 )
 
@@ -82,13 +82,13 @@ add_custom_target(xarm_planner_generate_messages_cpp
 add_dependencies(xarm_planner_generate_messages xarm_planner_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_cpp _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_cpp _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_cpp _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_cpp _xarm_planner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -103,27 +103,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_planner_generate_messages_cpp)
 
 ### Generating Services
 _generate_srv_eus(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_eus(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_eus(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_eus(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/xarm_planner
 )
 
@@ -139,13 +139,13 @@ add_custom_target(xarm_planner_generate_messages_eus
 add_dependencies(xarm_planner_generate_messages xarm_planner_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_eus _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_eus _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_eus _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_eus _xarm_planner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -160,27 +160,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_planner_generate_messages_eus)
 
 ### Generating Services
 _generate_srv_lisp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_lisp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_lisp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_lisp(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/xarm_planner
 )
 
@@ -196,13 +196,13 @@ add_custom_target(xarm_planner_generate_messages_lisp
 add_dependencies(xarm_planner_generate_messages xarm_planner_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_lisp _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_lisp _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_lisp _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_lisp _xarm_planner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -217,27 +217,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_planner_generate_messages_lisp
 
 ### Generating Services
 _generate_srv_nodejs(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_nodejs(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_nodejs(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_nodejs(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/xarm_planner
 )
 
@@ -253,13 +253,13 @@ add_custom_target(xarm_planner_generate_messages_nodejs
 add_dependencies(xarm_planner_generate_messages xarm_planner_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_nodejs _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_nodejs _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_nodejs _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_nodejs _xarm_planner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -274,27 +274,27 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS xarm_planner_generate_messages_node
 
 ### Generating Services
 _generate_srv_py(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_py(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_py(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_planner
 )
 _generate_srv_py(xarm_planner
-  "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Pose.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/xarm_planner
 )
 
@@ -310,13 +310,13 @@ add_custom_target(xarm_planner_generate_messages_py
 add_dependencies(xarm_planner_generate_messages xarm_planner_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/pose_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_py _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/joint_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_py _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/exec_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_py _xarm_planner_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
+get_filename_component(_filename "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_planner/srv/single_straight_plan.srv" NAME_WE)
 add_dependencies(xarm_planner_generate_messages_py _xarm_planner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

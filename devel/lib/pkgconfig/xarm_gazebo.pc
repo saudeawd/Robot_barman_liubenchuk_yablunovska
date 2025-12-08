@@ -1,4 +1,4 @@
-prefix=/home/liubenchuk/xarm_ws/devel
+prefix=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel
 
 Name: xarm_gazebo
 Description: Description of xarm_gazebo

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_controller/uf_ros_controller"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_controller/uf_ros_controller.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_controller/uf_ros_controller"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_controller/uf_ros_controller.pdb"
   "CMakeFiles/uf_ros_controller.dir/src/xarm_control_node.cpp.o"
 )
 

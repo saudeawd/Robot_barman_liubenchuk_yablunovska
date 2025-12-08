@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/xarm_joystick_input.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/xarm_joystick_input.h
 moveit_servo/make_shared_from_pool.h
 -
 geometry_msgs/TwistStamped.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/geometry_msgs/TwistStamped.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/geometry_msgs/TwistStamped.h
 control_msgs/JointJog.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/control_msgs/JointJog.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/control_msgs/JointJog.h
 ros/ros.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/ros/ros.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/ros/ros.h
 sensor_msgs/Joy.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/sensor_msgs/Joy.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/include/xarm_moveit_servo/sensor_msgs/Joy.h
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/src/xarm_joystick_input.cpp
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/src/xarm_joystick_input.cpp
 xarm_moveit_servo/xarm_joystick_input.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/src/xarm_moveit_servo/xarm_joystick_input.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/src/xarm_moveit_servo/xarm_joystick_input.h
 controller_manager_msgs/ListControllers.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_moveit_servo/src/controller_manager_msgs/ListControllers.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_moveit_servo/src/controller_manager_msgs/ListControllers.h
 
 /opt/ros/noetic/include/control_msgs/JointJog.h
 string

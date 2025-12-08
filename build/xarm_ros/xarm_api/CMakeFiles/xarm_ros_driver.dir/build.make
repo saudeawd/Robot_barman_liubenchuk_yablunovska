@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 # Include any dependencies generated for this target.
 include xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/depend.make
@@ -58,17 +58,17 @@ include xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/progress.make
 include xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/flags.make
 
 xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o: xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/flags.make
-xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/src/xarm_driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o -c /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/src/xarm_driver.cpp
+xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/src/xarm_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o -c /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/src/xarm_driver.cpp
 
 xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.i"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/src/xarm_driver.cpp > CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/src/xarm_driver.cpp > CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.i
 
 xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.s"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api/src/xarm_driver.cpp -o CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api/src/xarm_driver.cpp -o CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.s
 
 # Object files for target xarm_ros_driver
 xarm_ros_driver_OBJECTS = \
@@ -77,41 +77,41 @@ xarm_ros_driver_OBJECTS = \
 # External object files for target xarm_ros_driver
 xarm_ros_driver_EXTERNAL_OBJECTS =
 
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/build.make
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libactionlib.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libroscpp.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librosconsole.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librostime.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libcpp_common.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: /home/liubenchuk/xarm_ws/devel/lib/libxarm_cxx_sdk.so
-/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so: xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xarm_ros_driver.dir/link.txt --verbose=$(VERBOSE)
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/build.make
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libactionlib.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libroscpp.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librosconsole.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/librostime.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /opt/ros/noetic/lib/libcpp_common.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_cxx_sdk.so
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so: xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xarm_ros_driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/build: /home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so
+xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/build: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so
 
 .PHONY : xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/build
 
 xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/clean:
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api && $(CMAKE_COMMAND) -P CMakeFiles/xarm_ros_driver.dir/cmake_clean.cmake
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api && $(CMAKE_COMMAND) -P CMakeFiles/xarm_ros_driver.dir/cmake_clean.cmake
 .PHONY : xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/clean
 
 xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_api /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_api /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xarm_ros/xarm_api/CMakeFiles/xarm_ros_driver.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles /home/liubenchuk/xarm_ws/build/xarm_ros/examples/run_recorded_traj/CMakeFiles/progress.marks
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/examples/run_recorded_traj/CMakeFiles/progress.marks
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/clean
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/rule
 .PHONY : xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ xarm_traj_test: xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.di
 
 # fast build rule for target.
 xarm_traj_test/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build
 .PHONY : xarm_traj_test/fast
 
 src/xarm_traj_test.o: src/xarm_traj_test.cpp.o
@@ -188,7 +188,7 @@ src/xarm_traj_test.o: src/xarm_traj_test.cpp.o
 
 # target to build an object file
 src/xarm_traj_test.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/src/xarm_traj_test.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/src/xarm_traj_test.cpp.o
 .PHONY : src/xarm_traj_test.cpp.o
 
 src/xarm_traj_test.i: src/xarm_traj_test.cpp.i
@@ -197,7 +197,7 @@ src/xarm_traj_test.i: src/xarm_traj_test.cpp.i
 
 # target to preprocess a source file
 src/xarm_traj_test.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/src/xarm_traj_test.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/src/xarm_traj_test.cpp.i
 .PHONY : src/xarm_traj_test.cpp.i
 
 src/xarm_traj_test.s: src/xarm_traj_test.cpp.s
@@ -206,7 +206,7 @@ src/xarm_traj_test.s: src/xarm_traj_test.cpp.s
 
 # target to generate assembly for a file
 src/xarm_traj_test.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/src/xarm_traj_test.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/build.make xarm_ros/examples/run_recorded_traj/CMakeFiles/xarm_traj_test.dir/src/xarm_traj_test.cpp.s
 .PHONY : src/xarm_traj_test.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

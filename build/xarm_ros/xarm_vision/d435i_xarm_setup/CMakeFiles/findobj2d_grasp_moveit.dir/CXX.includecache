@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_msgs/GripperConfig.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_msgs/GripperConfig.h
 ros/service_traits.h
 -
 xarm_msgs/GripperConfigRequest.h
@@ -14,7 +14,7 @@ xarm_msgs/GripperConfigRequest.h
 xarm_msgs/GripperConfigResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_msgs/GripperConfigRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_msgs/GripperConfigRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_msgs/GripperConfigResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_msgs/GripperConfigResponse.h
 string
 -
 vector
@@ -46,7 +46,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_msgs/GripperMove.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_msgs/GripperMove.h
 ros/service_traits.h
 -
 xarm_msgs/GripperMoveRequest.h
@@ -54,7 +54,7 @@ xarm_msgs/GripperMoveRequest.h
 xarm_msgs/GripperMoveResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_msgs/GripperMoveRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_msgs/GripperMoveRequest.h
 string
 -
 vector
@@ -70,7 +70,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_msgs/GripperMoveResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_msgs/GripperMoveResponse.h
 string
 -
 vector
@@ -86,7 +86,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/exec_plan.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/exec_plan.h
 ros/service_traits.h
 -
 xarm_planner/exec_planRequest.h
@@ -94,7 +94,7 @@ xarm_planner/exec_planRequest.h
 xarm_planner/exec_planResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/exec_planRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/exec_planRequest.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/exec_planResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/exec_planResponse.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/joint_plan.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/joint_plan.h
 ros/service_traits.h
 -
 xarm_planner/joint_planRequest.h
@@ -134,7 +134,7 @@ xarm_planner/joint_planRequest.h
 xarm_planner/joint_planResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/joint_planRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/joint_planRequest.h
 string
 -
 vector
@@ -150,7 +150,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/joint_planResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/joint_planResponse.h
 string
 -
 vector
@@ -166,7 +166,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/pose_plan.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/pose_plan.h
 ros/service_traits.h
 -
 xarm_planner/pose_planRequest.h
@@ -174,7 +174,7 @@ xarm_planner/pose_planRequest.h
 xarm_planner/pose_planResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/pose_planRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/pose_planRequest.h
 string
 -
 vector
@@ -192,7 +192,7 @@ ros/message_operations.h
 geometry_msgs/Pose.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/pose_planResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/pose_planResponse.h
 string
 -
 vector
@@ -208,7 +208,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/single_straight_plan.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/single_straight_plan.h
 ros/service_traits.h
 -
 xarm_planner/single_straight_planRequest.h
@@ -216,7 +216,7 @@ xarm_planner/single_straight_planRequest.h
 xarm_planner/single_straight_planResponse.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/single_straight_planRequest.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/single_straight_planRequest.h
 string
 -
 vector
@@ -234,7 +234,7 @@ ros/message_operations.h
 geometry_msgs/Pose.h
 -
 
-/home/liubenchuk/xarm_ws/devel/include/xarm_planner/single_straight_planResponse.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/include/xarm_planner/single_straight_planResponse.h
 string
 -
 vector
@@ -250,9 +250,9 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/findobj_grasp_moveit_planner.cpp
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/findobj_grasp_moveit_planner.cpp
 ros/ros.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/ros/ros.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/ros/ros.h
 tf/transform_listener.h
 -
 std_msgs/Bool.h

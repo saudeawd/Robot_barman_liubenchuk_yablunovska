@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.pdb"
-  "/home/liubenchuk/xarm_ws/devel/lib/libxarm_ros_driver.so"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/libxarm_ros_driver.so"
   "CMakeFiles/xarm_ros_driver.dir/src/xarm_driver.cpp.o"
 )
 

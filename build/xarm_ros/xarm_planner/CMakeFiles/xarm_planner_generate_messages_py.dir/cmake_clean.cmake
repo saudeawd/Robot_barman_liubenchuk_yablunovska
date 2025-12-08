@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py"
-  "/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py"
-  "/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py"
-  "/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py"
-  "/home/liubenchuk/xarm_ws/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/__init__.py"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_exec_plan.py"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_joint_plan.py"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_pose_plan.py"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/python3/dist-packages/xarm_planner/srv/_single_straight_plan.py"
   "CMakeFiles/xarm_planner_generate_messages_py"
 )
 

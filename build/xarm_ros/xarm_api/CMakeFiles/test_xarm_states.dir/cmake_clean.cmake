@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_xarm_states"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_api/test_xarm_states.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_xarm_states"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_api/test_xarm_states.pdb"
   "CMakeFiles/test_xarm_states.dir/test/test_xarm_states.cpp.o"
 )
 

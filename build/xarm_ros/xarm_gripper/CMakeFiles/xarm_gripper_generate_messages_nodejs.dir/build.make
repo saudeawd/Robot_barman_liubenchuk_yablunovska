@@ -43,88 +43,88 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 # Utility rule file for xarm_gripper_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/progress.make
 
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js
-xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js
+xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js
 
 
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from xarm_gripper/MoveAction.msg"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveAction.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from xarm_gripper/MoveAction.msg"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveAction.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from xarm_gripper/MoveActionGoal.msg"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from xarm_gripper/MoveActionGoal.msg"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionGoal.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from xarm_gripper/MoveActionResult.msg"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from xarm_gripper/MoveActionResult.msg"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionResult.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from xarm_gripper/MoveActionFeedback.msg"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from xarm_gripper/MoveActionFeedback.msg"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveActionFeedback.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from xarm_gripper/MoveGoal.msg"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveGoal.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from xarm_gripper/MoveGoal.msg"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveGoal.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from xarm_gripper/MoveResult.msg"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveResult.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from xarm_gripper/MoveResult.msg"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveResult.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg
 
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js: /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/liubenchuk/xarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from xarm_gripper/MoveFeedback.msg"
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg -Ixarm_gripper:/home/liubenchuk/xarm_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from xarm_gripper/MoveFeedback.msg"
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg/MoveFeedback.msg -Ixarm_gripper:/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg
 
 xarm_gripper_generate_messages_nodejs: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs
-xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js
-xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js
-xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js
-xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js
-xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js
-xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js
-xarm_gripper_generate_messages_nodejs: /home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js
+xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveAction.js
+xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionGoal.js
+xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionResult.js
+xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveActionFeedback.js
+xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveGoal.js
+xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveResult.js
+xarm_gripper_generate_messages_nodejs: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_gripper/msg/MoveFeedback.js
 xarm_gripper_generate_messages_nodejs: xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build.make
 
 .PHONY : xarm_gripper_generate_messages_nodejs
@@ -135,10 +135,10 @@ xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/build
 
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/clean:
-	cd /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper && $(CMAKE_COMMAND) -P CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper && $(CMAKE_COMMAND) -P CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/clean
 
 xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liubenchuk/xarm_ws/src /home/liubenchuk/xarm_ws/src/xarm_ros/xarm_gripper /home/liubenchuk/xarm_ws/build /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_gripper /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_nodejs.dir/depend
 

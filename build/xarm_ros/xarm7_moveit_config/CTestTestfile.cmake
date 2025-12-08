@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/liubenchuk/xarm_ws/src/xarm_ros/xarm7_moveit_config
-# Build directory: /home/liubenchuk/xarm_ws/build/xarm_ros/xarm7_moveit_config
+# Source directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm7_moveit_config
+# Build directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm7_moveit_config
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

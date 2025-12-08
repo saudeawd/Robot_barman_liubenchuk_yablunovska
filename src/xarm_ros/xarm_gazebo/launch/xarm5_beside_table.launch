@@ -43,11 +43,11 @@
 
   <node name="spawn_cup_glass" pkg="gazebo_ros" type="spawn_model"
     respawn="false" output="screen"
-    args="-file $(find xarm_gazebo)/models/cup_glass/model.sdf -sdf -model cup_glass -x 0.6 -y -0.1 -z 1.05"/>
+    args="-file $(find xarm_gazebo)/models/cup_glass/model.sdf -sdf -model cup_glass -x 0.4 -y -0.1 -z 1.05"/>
 
 <node name="spawn_beer_bottle" pkg="gazebo_ros" type="spawn_model"
     respawn="false" output="screen" launch-prefix="bash -c 'sleep 5; $0 $@'"
-    args="-file $(find xarm_gazebo)/models/bottle_beer/model.sdf -sdf -model beer_bottle -x 0.6 -y 0.1 -z 1.05"/>
+    args="-file $(find xarm_gazebo)/models/bottle_beer/model.sdf -sdf -model beer_bottle -x 0.4 -y 0.1 -z 1.05"/>
 
 
   <include file="$(find xarm_controller)/launch/xarm5_control.launch">

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_controller/sample_motion"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_controller/sample_motion.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_controller/sample_motion"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_controller/sample_motion.pdb"
   "CMakeFiles/sample_motion.dir/src/sample_motion.cpp.o"
 )
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/progress.marks
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/progress.marks
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/clean
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/rule
 .PHONY : xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ obj2base: xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/rule
 
 # fast build rule for target.
 obj2base/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build
 .PHONY : obj2base/fast
 
 # Convenience name for target.
 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/rule
 .PHONY : xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ findobj2d_grasp_moveit: xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj
 
 # fast build rule for target.
 findobj2d_grasp_moveit/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build
 .PHONY : findobj2d_grasp_moveit/fast
 
 # Convenience name for target.
 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/rule
 .PHONY : xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/rule
 
 # Convenience name for target.
@@ -209,7 +209,7 @@ findobj2d_grasp_api: xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_
 
 # fast build rule for target.
 findobj2d_grasp_api/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build
 .PHONY : findobj2d_grasp_api/fast
 
 src/findobj_grasp_moveit_planner.o: src/findobj_grasp_moveit_planner.cpp.o
@@ -218,7 +218,7 @@ src/findobj_grasp_moveit_planner.o: src/findobj_grasp_moveit_planner.cpp.o
 
 # target to build an object file
 src/findobj_grasp_moveit_planner.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/src/findobj_grasp_moveit_planner.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/src/findobj_grasp_moveit_planner.cpp.o
 .PHONY : src/findobj_grasp_moveit_planner.cpp.o
 
 src/findobj_grasp_moveit_planner.i: src/findobj_grasp_moveit_planner.cpp.i
@@ -227,7 +227,7 @@ src/findobj_grasp_moveit_planner.i: src/findobj_grasp_moveit_planner.cpp.i
 
 # target to preprocess a source file
 src/findobj_grasp_moveit_planner.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/src/findobj_grasp_moveit_planner.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/src/findobj_grasp_moveit_planner.cpp.i
 .PHONY : src/findobj_grasp_moveit_planner.cpp.i
 
 src/findobj_grasp_moveit_planner.s: src/findobj_grasp_moveit_planner.cpp.s
@@ -236,7 +236,7 @@ src/findobj_grasp_moveit_planner.s: src/findobj_grasp_moveit_planner.cpp.s
 
 # target to generate assembly for a file
 src/findobj_grasp_moveit_planner.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/src/findobj_grasp_moveit_planner.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_moveit.dir/src/findobj_grasp_moveit_planner.cpp.s
 .PHONY : src/findobj_grasp_moveit_planner.cpp.s
 
 src/findobj_grasp_xarm_api.o: src/findobj_grasp_xarm_api.cpp.o
@@ -245,7 +245,7 @@ src/findobj_grasp_xarm_api.o: src/findobj_grasp_xarm_api.cpp.o
 
 # target to build an object file
 src/findobj_grasp_xarm_api.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/src/findobj_grasp_xarm_api.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/src/findobj_grasp_xarm_api.cpp.o
 .PHONY : src/findobj_grasp_xarm_api.cpp.o
 
 src/findobj_grasp_xarm_api.i: src/findobj_grasp_xarm_api.cpp.i
@@ -254,7 +254,7 @@ src/findobj_grasp_xarm_api.i: src/findobj_grasp_xarm_api.cpp.i
 
 # target to preprocess a source file
 src/findobj_grasp_xarm_api.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/src/findobj_grasp_xarm_api.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/src/findobj_grasp_xarm_api.cpp.i
 .PHONY : src/findobj_grasp_xarm_api.cpp.i
 
 src/findobj_grasp_xarm_api.s: src/findobj_grasp_xarm_api.cpp.s
@@ -263,7 +263,7 @@ src/findobj_grasp_xarm_api.s: src/findobj_grasp_xarm_api.cpp.s
 
 # target to generate assembly for a file
 src/findobj_grasp_xarm_api.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/src/findobj_grasp_xarm_api.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/findobj2d_grasp_api.dir/src/findobj_grasp_xarm_api.cpp.s
 .PHONY : src/findobj_grasp_xarm_api.cpp.s
 
 src/tf_object_to_base.o: src/tf_object_to_base.cpp.o
@@ -272,7 +272,7 @@ src/tf_object_to_base.o: src/tf_object_to_base.cpp.o
 
 # target to build an object file
 src/tf_object_to_base.cpp.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/src/tf_object_to_base.cpp.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/src/tf_object_to_base.cpp.o
 .PHONY : src/tf_object_to_base.cpp.o
 
 src/tf_object_to_base.i: src/tf_object_to_base.cpp.i
@@ -281,7 +281,7 @@ src/tf_object_to_base.i: src/tf_object_to_base.cpp.i
 
 # target to preprocess a source file
 src/tf_object_to_base.cpp.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/src/tf_object_to_base.cpp.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/src/tf_object_to_base.cpp.i
 .PHONY : src/tf_object_to_base.cpp.i
 
 src/tf_object_to_base.s: src/tf_object_to_base.cpp.s
@@ -290,7 +290,7 @@ src/tf_object_to_base.s: src/tf_object_to_base.cpp.s
 
 # target to generate assembly for a file
 src/tf_object_to_base.cpp.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/src/tf_object_to_base.cpp.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/build.make xarm_ros/xarm_vision/d435i_xarm_setup/CMakeFiles/obj2base.dir/src/tf_object_to_base.cpp.s
 .PHONY : src/tf_object_to_base.cpp.s
 
 # Help Target
@@ -329,6 +329,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

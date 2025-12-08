@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/tf_object_to_base.cpp
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/tf_object_to_base.cpp
 ros/ros.h
-/home/liubenchuk/xarm_ws/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/ros/ros.h
+/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src/xarm_ros/xarm_vision/d435i_xarm_setup/src/ros/ros.h
 tf/transform_broadcaster.h
 -
 object_recognition_msgs/RecognizedObjectArray.h

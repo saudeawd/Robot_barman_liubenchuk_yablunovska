@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_planner/xarm_simple_planner_test"
-  "/home/liubenchuk/xarm_ws/devel/lib/xarm_planner/xarm_simple_planner_test.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_planner/xarm_simple_planner_test"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/xarm_planner/xarm_simple_planner_test.pdb"
   "CMakeFiles/xarm_simple_planner_test.dir/src/xarm_simple_planner_test.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/lib/d435i_xarm_setup/obj2base"
-  "/home/liubenchuk/xarm_ws/devel/lib/d435i_xarm_setup/obj2base.pdb"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/d435i_xarm_setup/obj2base"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/lib/d435i_xarm_setup/obj2base.pdb"
   "CMakeFiles/obj2base.dir/src/tf_object_to_base.cpp.o"
 )
 

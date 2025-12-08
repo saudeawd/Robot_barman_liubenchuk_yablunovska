@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liubenchuk/xarm_ws/src
+CMAKE_SOURCE_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liubenchuk/xarm_ws/build
+CMAKE_BINARY_DIR = /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles /home/liubenchuk/xarm_ws/build/xarm_ros/xarm_sdk/CMakeFiles/progress.marks
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liubenchuk/xarm_ws/build/CMakeFiles 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/xarm_ros/xarm_sdk/CMakeFiles/progress.marks
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/clean
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/preinstall
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/rule:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/rule
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f CMakeFiles/Makefile2 xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/rule
 .PHONY : xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ xarm_cxx_sdk: xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/rule
 
 # fast build rule for target.
 xarm_cxx_sdk/fast:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build
 .PHONY : xarm_cxx_sdk/fast
 
 cxx/src/serial/impl/list_ports/list_ports_linux.o: cxx/src/serial/impl/list_ports/list_ports_linux.cc.o
@@ -188,7 +188,7 @@ cxx/src/serial/impl/list_ports/list_ports_linux.o: cxx/src/serial/impl/list_port
 
 # target to build an object file
 cxx/src/serial/impl/list_ports/list_ports_linux.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_linux.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_linux.cc.o
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_linux.cc.o
 
 cxx/src/serial/impl/list_ports/list_ports_linux.i: cxx/src/serial/impl/list_ports/list_ports_linux.cc.i
@@ -197,7 +197,7 @@ cxx/src/serial/impl/list_ports/list_ports_linux.i: cxx/src/serial/impl/list_port
 
 # target to preprocess a source file
 cxx/src/serial/impl/list_ports/list_ports_linux.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_linux.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_linux.cc.i
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_linux.cc.i
 
 cxx/src/serial/impl/list_ports/list_ports_linux.s: cxx/src/serial/impl/list_ports/list_ports_linux.cc.s
@@ -206,7 +206,7 @@ cxx/src/serial/impl/list_ports/list_ports_linux.s: cxx/src/serial/impl/list_port
 
 # target to generate assembly for a file
 cxx/src/serial/impl/list_ports/list_ports_linux.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_linux.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_linux.cc.s
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_linux.cc.s
 
 cxx/src/serial/impl/list_ports/list_ports_osx.o: cxx/src/serial/impl/list_ports/list_ports_osx.cc.o
@@ -215,7 +215,7 @@ cxx/src/serial/impl/list_ports/list_ports_osx.o: cxx/src/serial/impl/list_ports/
 
 # target to build an object file
 cxx/src/serial/impl/list_ports/list_ports_osx.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_osx.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_osx.cc.o
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_osx.cc.o
 
 cxx/src/serial/impl/list_ports/list_ports_osx.i: cxx/src/serial/impl/list_ports/list_ports_osx.cc.i
@@ -224,7 +224,7 @@ cxx/src/serial/impl/list_ports/list_ports_osx.i: cxx/src/serial/impl/list_ports/
 
 # target to preprocess a source file
 cxx/src/serial/impl/list_ports/list_ports_osx.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_osx.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_osx.cc.i
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_osx.cc.i
 
 cxx/src/serial/impl/list_ports/list_ports_osx.s: cxx/src/serial/impl/list_ports/list_ports_osx.cc.s
@@ -233,7 +233,7 @@ cxx/src/serial/impl/list_ports/list_ports_osx.s: cxx/src/serial/impl/list_ports/
 
 # target to generate assembly for a file
 cxx/src/serial/impl/list_ports/list_ports_osx.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_osx.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_osx.cc.s
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_osx.cc.s
 
 cxx/src/serial/impl/list_ports/list_ports_win.o: cxx/src/serial/impl/list_ports/list_ports_win.cc.o
@@ -242,7 +242,7 @@ cxx/src/serial/impl/list_ports/list_ports_win.o: cxx/src/serial/impl/list_ports/
 
 # target to build an object file
 cxx/src/serial/impl/list_ports/list_ports_win.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_win.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_win.cc.o
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_win.cc.o
 
 cxx/src/serial/impl/list_ports/list_ports_win.i: cxx/src/serial/impl/list_ports/list_ports_win.cc.i
@@ -251,7 +251,7 @@ cxx/src/serial/impl/list_ports/list_ports_win.i: cxx/src/serial/impl/list_ports/
 
 # target to preprocess a source file
 cxx/src/serial/impl/list_ports/list_ports_win.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_win.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_win.cc.i
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_win.cc.i
 
 cxx/src/serial/impl/list_ports/list_ports_win.s: cxx/src/serial/impl/list_ports/list_ports_win.cc.s
@@ -260,7 +260,7 @@ cxx/src/serial/impl/list_ports/list_ports_win.s: cxx/src/serial/impl/list_ports/
 
 # target to generate assembly for a file
 cxx/src/serial/impl/list_ports/list_ports_win.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_win.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/list_ports/list_ports_win.cc.s
 .PHONY : cxx/src/serial/impl/list_ports/list_ports_win.cc.s
 
 cxx/src/serial/impl/unix.o: cxx/src/serial/impl/unix.cc.o
@@ -269,7 +269,7 @@ cxx/src/serial/impl/unix.o: cxx/src/serial/impl/unix.cc.o
 
 # target to build an object file
 cxx/src/serial/impl/unix.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/unix.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/unix.cc.o
 .PHONY : cxx/src/serial/impl/unix.cc.o
 
 cxx/src/serial/impl/unix.i: cxx/src/serial/impl/unix.cc.i
@@ -278,7 +278,7 @@ cxx/src/serial/impl/unix.i: cxx/src/serial/impl/unix.cc.i
 
 # target to preprocess a source file
 cxx/src/serial/impl/unix.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/unix.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/unix.cc.i
 .PHONY : cxx/src/serial/impl/unix.cc.i
 
 cxx/src/serial/impl/unix.s: cxx/src/serial/impl/unix.cc.s
@@ -287,7 +287,7 @@ cxx/src/serial/impl/unix.s: cxx/src/serial/impl/unix.cc.s
 
 # target to generate assembly for a file
 cxx/src/serial/impl/unix.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/unix.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/unix.cc.s
 .PHONY : cxx/src/serial/impl/unix.cc.s
 
 cxx/src/serial/impl/win.o: cxx/src/serial/impl/win.cc.o
@@ -296,7 +296,7 @@ cxx/src/serial/impl/win.o: cxx/src/serial/impl/win.cc.o
 
 # target to build an object file
 cxx/src/serial/impl/win.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/win.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/win.cc.o
 .PHONY : cxx/src/serial/impl/win.cc.o
 
 cxx/src/serial/impl/win.i: cxx/src/serial/impl/win.cc.i
@@ -305,7 +305,7 @@ cxx/src/serial/impl/win.i: cxx/src/serial/impl/win.cc.i
 
 # target to preprocess a source file
 cxx/src/serial/impl/win.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/win.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/win.cc.i
 .PHONY : cxx/src/serial/impl/win.cc.i
 
 cxx/src/serial/impl/win.s: cxx/src/serial/impl/win.cc.s
@@ -314,7 +314,7 @@ cxx/src/serial/impl/win.s: cxx/src/serial/impl/win.cc.s
 
 # target to generate assembly for a file
 cxx/src/serial/impl/win.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/win.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/impl/win.cc.s
 .PHONY : cxx/src/serial/impl/win.cc.s
 
 cxx/src/serial/serial.o: cxx/src/serial/serial.cc.o
@@ -323,7 +323,7 @@ cxx/src/serial/serial.o: cxx/src/serial/serial.cc.o
 
 # target to build an object file
 cxx/src/serial/serial.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/serial.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/serial.cc.o
 .PHONY : cxx/src/serial/serial.cc.o
 
 cxx/src/serial/serial.i: cxx/src/serial/serial.cc.i
@@ -332,7 +332,7 @@ cxx/src/serial/serial.i: cxx/src/serial/serial.cc.i
 
 # target to preprocess a source file
 cxx/src/serial/serial.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/serial.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/serial.cc.i
 .PHONY : cxx/src/serial/serial.cc.i
 
 cxx/src/serial/serial.s: cxx/src/serial/serial.cc.s
@@ -341,7 +341,7 @@ cxx/src/serial/serial.s: cxx/src/serial/serial.cc.s
 
 # target to generate assembly for a file
 cxx/src/serial/serial.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/serial.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/serial/serial.cc.s
 .PHONY : cxx/src/serial/serial.cc.s
 
 cxx/src/xarm/core/common/crc16.o: cxx/src/xarm/core/common/crc16.cc.o
@@ -350,7 +350,7 @@ cxx/src/xarm/core/common/crc16.o: cxx/src/xarm/core/common/crc16.cc.o
 
 # target to build an object file
 cxx/src/xarm/core/common/crc16.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/crc16.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/crc16.cc.o
 .PHONY : cxx/src/xarm/core/common/crc16.cc.o
 
 cxx/src/xarm/core/common/crc16.i: cxx/src/xarm/core/common/crc16.cc.i
@@ -359,7 +359,7 @@ cxx/src/xarm/core/common/crc16.i: cxx/src/xarm/core/common/crc16.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/core/common/crc16.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/crc16.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/crc16.cc.i
 .PHONY : cxx/src/xarm/core/common/crc16.cc.i
 
 cxx/src/xarm/core/common/crc16.s: cxx/src/xarm/core/common/crc16.cc.s
@@ -368,7 +368,7 @@ cxx/src/xarm/core/common/crc16.s: cxx/src/xarm/core/common/crc16.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/core/common/crc16.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/crc16.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/crc16.cc.s
 .PHONY : cxx/src/xarm/core/common/crc16.cc.s
 
 cxx/src/xarm/core/common/queue_memcpy.o: cxx/src/xarm/core/common/queue_memcpy.cc.o
@@ -377,7 +377,7 @@ cxx/src/xarm/core/common/queue_memcpy.o: cxx/src/xarm/core/common/queue_memcpy.c
 
 # target to build an object file
 cxx/src/xarm/core/common/queue_memcpy.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/queue_memcpy.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/queue_memcpy.cc.o
 .PHONY : cxx/src/xarm/core/common/queue_memcpy.cc.o
 
 cxx/src/xarm/core/common/queue_memcpy.i: cxx/src/xarm/core/common/queue_memcpy.cc.i
@@ -386,7 +386,7 @@ cxx/src/xarm/core/common/queue_memcpy.i: cxx/src/xarm/core/common/queue_memcpy.c
 
 # target to preprocess a source file
 cxx/src/xarm/core/common/queue_memcpy.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/queue_memcpy.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/queue_memcpy.cc.i
 .PHONY : cxx/src/xarm/core/common/queue_memcpy.cc.i
 
 cxx/src/xarm/core/common/queue_memcpy.s: cxx/src/xarm/core/common/queue_memcpy.cc.s
@@ -395,7 +395,7 @@ cxx/src/xarm/core/common/queue_memcpy.s: cxx/src/xarm/core/common/queue_memcpy.c
 
 # target to generate assembly for a file
 cxx/src/xarm/core/common/queue_memcpy.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/queue_memcpy.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/common/queue_memcpy.cc.s
 .PHONY : cxx/src/xarm/core/common/queue_memcpy.cc.s
 
 cxx/src/xarm/core/connect.o: cxx/src/xarm/core/connect.cc.o
@@ -404,7 +404,7 @@ cxx/src/xarm/core/connect.o: cxx/src/xarm/core/connect.cc.o
 
 # target to build an object file
 cxx/src/xarm/core/connect.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/connect.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/connect.cc.o
 .PHONY : cxx/src/xarm/core/connect.cc.o
 
 cxx/src/xarm/core/connect.i: cxx/src/xarm/core/connect.cc.i
@@ -413,7 +413,7 @@ cxx/src/xarm/core/connect.i: cxx/src/xarm/core/connect.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/core/connect.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/connect.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/connect.cc.i
 .PHONY : cxx/src/xarm/core/connect.cc.i
 
 cxx/src/xarm/core/connect.s: cxx/src/xarm/core/connect.cc.s
@@ -422,7 +422,7 @@ cxx/src/xarm/core/connect.s: cxx/src/xarm/core/connect.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/core/connect.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/connect.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/connect.cc.s
 .PHONY : cxx/src/xarm/core/connect.cc.s
 
 cxx/src/xarm/core/debug/debug_print.o: cxx/src/xarm/core/debug/debug_print.cc.o
@@ -431,7 +431,7 @@ cxx/src/xarm/core/debug/debug_print.o: cxx/src/xarm/core/debug/debug_print.cc.o
 
 # target to build an object file
 cxx/src/xarm/core/debug/debug_print.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/debug/debug_print.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/debug/debug_print.cc.o
 .PHONY : cxx/src/xarm/core/debug/debug_print.cc.o
 
 cxx/src/xarm/core/debug/debug_print.i: cxx/src/xarm/core/debug/debug_print.cc.i
@@ -440,7 +440,7 @@ cxx/src/xarm/core/debug/debug_print.i: cxx/src/xarm/core/debug/debug_print.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/core/debug/debug_print.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/debug/debug_print.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/debug/debug_print.cc.i
 .PHONY : cxx/src/xarm/core/debug/debug_print.cc.i
 
 cxx/src/xarm/core/debug/debug_print.s: cxx/src/xarm/core/debug/debug_print.cc.s
@@ -449,7 +449,7 @@ cxx/src/xarm/core/debug/debug_print.s: cxx/src/xarm/core/debug/debug_print.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/core/debug/debug_print.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/debug/debug_print.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/debug/debug_print.cc.s
 .PHONY : cxx/src/xarm/core/debug/debug_print.cc.s
 
 cxx/src/xarm/core/instruction/uxbus_cmd.o: cxx/src/xarm/core/instruction/uxbus_cmd.cc.o
@@ -458,7 +458,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd.o: cxx/src/xarm/core/instruction/uxbus_c
 
 # target to build an object file
 cxx/src/xarm/core/instruction/uxbus_cmd.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd.cc.o
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd.cc.o
 
 cxx/src/xarm/core/instruction/uxbus_cmd.i: cxx/src/xarm/core/instruction/uxbus_cmd.cc.i
@@ -467,7 +467,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd.i: cxx/src/xarm/core/instruction/uxbus_c
 
 # target to preprocess a source file
 cxx/src/xarm/core/instruction/uxbus_cmd.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd.cc.i
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd.cc.i
 
 cxx/src/xarm/core/instruction/uxbus_cmd.s: cxx/src/xarm/core/instruction/uxbus_cmd.cc.s
@@ -476,7 +476,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd.s: cxx/src/xarm/core/instruction/uxbus_c
 
 # target to generate assembly for a file
 cxx/src/xarm/core/instruction/uxbus_cmd.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd.cc.s
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd.cc.s
 
 cxx/src/xarm/core/instruction/uxbus_cmd_ser.o: cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.o
@@ -485,7 +485,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd_ser.o: cxx/src/xarm/core/instruction/uxb
 
 # target to build an object file
 cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.o
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.o
 
 cxx/src/xarm/core/instruction/uxbus_cmd_ser.i: cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.i
@@ -494,7 +494,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd_ser.i: cxx/src/xarm/core/instruction/uxb
 
 # target to preprocess a source file
 cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.i
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.i
 
 cxx/src/xarm/core/instruction/uxbus_cmd_ser.s: cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.s
@@ -503,7 +503,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd_ser.s: cxx/src/xarm/core/instruction/uxb
 
 # target to generate assembly for a file
 cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.s
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd_ser.cc.s
 
 cxx/src/xarm/core/instruction/uxbus_cmd_tcp.o: cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.o
@@ -512,7 +512,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd_tcp.o: cxx/src/xarm/core/instruction/uxb
 
 # target to build an object file
 cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.o
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.o
 
 cxx/src/xarm/core/instruction/uxbus_cmd_tcp.i: cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.i
@@ -521,7 +521,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd_tcp.i: cxx/src/xarm/core/instruction/uxb
 
 # target to preprocess a source file
 cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.i
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.i
 
 cxx/src/xarm/core/instruction/uxbus_cmd_tcp.s: cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.s
@@ -530,7 +530,7 @@ cxx/src/xarm/core/instruction/uxbus_cmd_tcp.s: cxx/src/xarm/core/instruction/uxb
 
 # target to generate assembly for a file
 cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.s
 .PHONY : cxx/src/xarm/core/instruction/uxbus_cmd_tcp.cc.s
 
 cxx/src/xarm/core/os/network.o: cxx/src/xarm/core/os/network.cc.o
@@ -539,7 +539,7 @@ cxx/src/xarm/core/os/network.o: cxx/src/xarm/core/os/network.cc.o
 
 # target to build an object file
 cxx/src/xarm/core/os/network.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/os/network.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/os/network.cc.o
 .PHONY : cxx/src/xarm/core/os/network.cc.o
 
 cxx/src/xarm/core/os/network.i: cxx/src/xarm/core/os/network.cc.i
@@ -548,7 +548,7 @@ cxx/src/xarm/core/os/network.i: cxx/src/xarm/core/os/network.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/core/os/network.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/os/network.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/os/network.cc.i
 .PHONY : cxx/src/xarm/core/os/network.cc.i
 
 cxx/src/xarm/core/os/network.s: cxx/src/xarm/core/os/network.cc.s
@@ -557,7 +557,7 @@ cxx/src/xarm/core/os/network.s: cxx/src/xarm/core/os/network.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/core/os/network.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/os/network.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/os/network.cc.s
 .PHONY : cxx/src/xarm/core/os/network.cc.s
 
 cxx/src/xarm/core/port/ser.o: cxx/src/xarm/core/port/ser.cc.o
@@ -566,7 +566,7 @@ cxx/src/xarm/core/port/ser.o: cxx/src/xarm/core/port/ser.cc.o
 
 # target to build an object file
 cxx/src/xarm/core/port/ser.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/ser.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/ser.cc.o
 .PHONY : cxx/src/xarm/core/port/ser.cc.o
 
 cxx/src/xarm/core/port/ser.i: cxx/src/xarm/core/port/ser.cc.i
@@ -575,7 +575,7 @@ cxx/src/xarm/core/port/ser.i: cxx/src/xarm/core/port/ser.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/core/port/ser.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/ser.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/ser.cc.i
 .PHONY : cxx/src/xarm/core/port/ser.cc.i
 
 cxx/src/xarm/core/port/ser.s: cxx/src/xarm/core/port/ser.cc.s
@@ -584,7 +584,7 @@ cxx/src/xarm/core/port/ser.s: cxx/src/xarm/core/port/ser.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/core/port/ser.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/ser.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/ser.cc.s
 .PHONY : cxx/src/xarm/core/port/ser.cc.s
 
 cxx/src/xarm/core/port/socket.o: cxx/src/xarm/core/port/socket.cc.o
@@ -593,7 +593,7 @@ cxx/src/xarm/core/port/socket.o: cxx/src/xarm/core/port/socket.cc.o
 
 # target to build an object file
 cxx/src/xarm/core/port/socket.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/socket.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/socket.cc.o
 .PHONY : cxx/src/xarm/core/port/socket.cc.o
 
 cxx/src/xarm/core/port/socket.i: cxx/src/xarm/core/port/socket.cc.i
@@ -602,7 +602,7 @@ cxx/src/xarm/core/port/socket.i: cxx/src/xarm/core/port/socket.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/core/port/socket.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/socket.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/socket.cc.i
 .PHONY : cxx/src/xarm/core/port/socket.cc.i
 
 cxx/src/xarm/core/port/socket.s: cxx/src/xarm/core/port/socket.cc.s
@@ -611,7 +611,7 @@ cxx/src/xarm/core/port/socket.s: cxx/src/xarm/core/port/socket.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/core/port/socket.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/socket.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/port/socket.cc.s
 .PHONY : cxx/src/xarm/core/port/socket.cc.s
 
 cxx/src/xarm/core/report_data.o: cxx/src/xarm/core/report_data.cc.o
@@ -620,7 +620,7 @@ cxx/src/xarm/core/report_data.o: cxx/src/xarm/core/report_data.cc.o
 
 # target to build an object file
 cxx/src/xarm/core/report_data.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/report_data.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/report_data.cc.o
 .PHONY : cxx/src/xarm/core/report_data.cc.o
 
 cxx/src/xarm/core/report_data.i: cxx/src/xarm/core/report_data.cc.i
@@ -629,7 +629,7 @@ cxx/src/xarm/core/report_data.i: cxx/src/xarm/core/report_data.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/core/report_data.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/report_data.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/report_data.cc.i
 .PHONY : cxx/src/xarm/core/report_data.cc.i
 
 cxx/src/xarm/core/report_data.s: cxx/src/xarm/core/report_data.cc.s
@@ -638,7 +638,7 @@ cxx/src/xarm/core/report_data.s: cxx/src/xarm/core/report_data.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/core/report_data.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/report_data.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/core/report_data.cc.s
 .PHONY : cxx/src/xarm/core/report_data.cc.s
 
 cxx/src/xarm/wrapper/xarm_api.o: cxx/src/xarm/wrapper/xarm_api.cc.o
@@ -647,7 +647,7 @@ cxx/src/xarm/wrapper/xarm_api.o: cxx/src/xarm/wrapper/xarm_api.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_api.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_api.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_api.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_api.cc.o
 
 cxx/src/xarm/wrapper/xarm_api.i: cxx/src/xarm/wrapper/xarm_api.cc.i
@@ -656,7 +656,7 @@ cxx/src/xarm/wrapper/xarm_api.i: cxx/src/xarm/wrapper/xarm_api.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_api.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_api.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_api.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_api.cc.i
 
 cxx/src/xarm/wrapper/xarm_api.s: cxx/src/xarm/wrapper/xarm_api.cc.s
@@ -665,7 +665,7 @@ cxx/src/xarm/wrapper/xarm_api.s: cxx/src/xarm/wrapper/xarm_api.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_api.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_api.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_api.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_api.cc.s
 
 cxx/src/xarm/wrapper/xarm_bio.o: cxx/src/xarm/wrapper/xarm_bio.cc.o
@@ -674,7 +674,7 @@ cxx/src/xarm/wrapper/xarm_bio.o: cxx/src/xarm/wrapper/xarm_bio.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_bio.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_bio.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_bio.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_bio.cc.o
 
 cxx/src/xarm/wrapper/xarm_bio.i: cxx/src/xarm/wrapper/xarm_bio.cc.i
@@ -683,7 +683,7 @@ cxx/src/xarm/wrapper/xarm_bio.i: cxx/src/xarm/wrapper/xarm_bio.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_bio.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_bio.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_bio.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_bio.cc.i
 
 cxx/src/xarm/wrapper/xarm_bio.s: cxx/src/xarm/wrapper/xarm_bio.cc.s
@@ -692,7 +692,7 @@ cxx/src/xarm/wrapper/xarm_bio.s: cxx/src/xarm/wrapper/xarm_bio.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_bio.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_bio.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_bio.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_bio.cc.s
 
 cxx/src/xarm/wrapper/xarm_events.o: cxx/src/xarm/wrapper/xarm_events.cc.o
@@ -701,7 +701,7 @@ cxx/src/xarm/wrapper/xarm_events.o: cxx/src/xarm/wrapper/xarm_events.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_events.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_events.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_events.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_events.cc.o
 
 cxx/src/xarm/wrapper/xarm_events.i: cxx/src/xarm/wrapper/xarm_events.cc.i
@@ -710,7 +710,7 @@ cxx/src/xarm/wrapper/xarm_events.i: cxx/src/xarm/wrapper/xarm_events.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_events.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_events.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_events.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_events.cc.i
 
 cxx/src/xarm/wrapper/xarm_events.s: cxx/src/xarm/wrapper/xarm_events.cc.s
@@ -719,7 +719,7 @@ cxx/src/xarm/wrapper/xarm_events.s: cxx/src/xarm/wrapper/xarm_events.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_events.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_events.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_events.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_events.cc.s
 
 cxx/src/xarm/wrapper/xarm_ft_sensor.o: cxx/src/xarm/wrapper/xarm_ft_sensor.cc.o
@@ -728,7 +728,7 @@ cxx/src/xarm/wrapper/xarm_ft_sensor.o: cxx/src/xarm/wrapper/xarm_ft_sensor.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_ft_sensor.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_ft_sensor.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_ft_sensor.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_ft_sensor.cc.o
 
 cxx/src/xarm/wrapper/xarm_ft_sensor.i: cxx/src/xarm/wrapper/xarm_ft_sensor.cc.i
@@ -737,7 +737,7 @@ cxx/src/xarm/wrapper/xarm_ft_sensor.i: cxx/src/xarm/wrapper/xarm_ft_sensor.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_ft_sensor.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_ft_sensor.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_ft_sensor.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_ft_sensor.cc.i
 
 cxx/src/xarm/wrapper/xarm_ft_sensor.s: cxx/src/xarm/wrapper/xarm_ft_sensor.cc.s
@@ -746,7 +746,7 @@ cxx/src/xarm/wrapper/xarm_ft_sensor.s: cxx/src/xarm/wrapper/xarm_ft_sensor.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_ft_sensor.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_ft_sensor.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_ft_sensor.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_ft_sensor.cc.s
 
 cxx/src/xarm/wrapper/xarm_gpio.o: cxx/src/xarm/wrapper/xarm_gpio.cc.o
@@ -755,7 +755,7 @@ cxx/src/xarm/wrapper/xarm_gpio.o: cxx/src/xarm/wrapper/xarm_gpio.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_gpio.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gpio.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gpio.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_gpio.cc.o
 
 cxx/src/xarm/wrapper/xarm_gpio.i: cxx/src/xarm/wrapper/xarm_gpio.cc.i
@@ -764,7 +764,7 @@ cxx/src/xarm/wrapper/xarm_gpio.i: cxx/src/xarm/wrapper/xarm_gpio.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_gpio.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gpio.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gpio.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_gpio.cc.i
 
 cxx/src/xarm/wrapper/xarm_gpio.s: cxx/src/xarm/wrapper/xarm_gpio.cc.s
@@ -773,7 +773,7 @@ cxx/src/xarm/wrapper/xarm_gpio.s: cxx/src/xarm/wrapper/xarm_gpio.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_gpio.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gpio.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gpio.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_gpio.cc.s
 
 cxx/src/xarm/wrapper/xarm_gripper.o: cxx/src/xarm/wrapper/xarm_gripper.cc.o
@@ -782,7 +782,7 @@ cxx/src/xarm/wrapper/xarm_gripper.o: cxx/src/xarm/wrapper/xarm_gripper.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_gripper.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gripper.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gripper.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_gripper.cc.o
 
 cxx/src/xarm/wrapper/xarm_gripper.i: cxx/src/xarm/wrapper/xarm_gripper.cc.i
@@ -791,7 +791,7 @@ cxx/src/xarm/wrapper/xarm_gripper.i: cxx/src/xarm/wrapper/xarm_gripper.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_gripper.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gripper.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gripper.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_gripper.cc.i
 
 cxx/src/xarm/wrapper/xarm_gripper.s: cxx/src/xarm/wrapper/xarm_gripper.cc.s
@@ -800,7 +800,7 @@ cxx/src/xarm/wrapper/xarm_gripper.s: cxx/src/xarm/wrapper/xarm_gripper.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_gripper.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gripper.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_gripper.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_gripper.cc.s
 
 cxx/src/xarm/wrapper/xarm_linear_motor.o: cxx/src/xarm/wrapper/xarm_linear_motor.cc.o
@@ -809,7 +809,7 @@ cxx/src/xarm/wrapper/xarm_linear_motor.o: cxx/src/xarm/wrapper/xarm_linear_motor
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_linear_motor.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_linear_motor.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_linear_motor.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_linear_motor.cc.o
 
 cxx/src/xarm/wrapper/xarm_linear_motor.i: cxx/src/xarm/wrapper/xarm_linear_motor.cc.i
@@ -818,7 +818,7 @@ cxx/src/xarm/wrapper/xarm_linear_motor.i: cxx/src/xarm/wrapper/xarm_linear_motor
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_linear_motor.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_linear_motor.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_linear_motor.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_linear_motor.cc.i
 
 cxx/src/xarm/wrapper/xarm_linear_motor.s: cxx/src/xarm/wrapper/xarm_linear_motor.cc.s
@@ -827,7 +827,7 @@ cxx/src/xarm/wrapper/xarm_linear_motor.s: cxx/src/xarm/wrapper/xarm_linear_motor
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_linear_motor.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_linear_motor.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_linear_motor.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_linear_motor.cc.s
 
 cxx/src/xarm/wrapper/xarm_modbus_tcp.o: cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.o
@@ -836,7 +836,7 @@ cxx/src/xarm/wrapper/xarm_modbus_tcp.o: cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.o
 
 cxx/src/xarm/wrapper/xarm_modbus_tcp.i: cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.i
@@ -845,7 +845,7 @@ cxx/src/xarm/wrapper/xarm_modbus_tcp.i: cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.i
 
 cxx/src/xarm/wrapper/xarm_modbus_tcp.s: cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.s
@@ -854,7 +854,7 @@ cxx/src/xarm/wrapper/xarm_modbus_tcp.s: cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_modbus_tcp.cc.s
 
 cxx/src/xarm/wrapper/xarm_motion.o: cxx/src/xarm/wrapper/xarm_motion.cc.o
@@ -863,7 +863,7 @@ cxx/src/xarm/wrapper/xarm_motion.o: cxx/src/xarm/wrapper/xarm_motion.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_motion.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_motion.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_motion.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_motion.cc.o
 
 cxx/src/xarm/wrapper/xarm_motion.i: cxx/src/xarm/wrapper/xarm_motion.cc.i
@@ -872,7 +872,7 @@ cxx/src/xarm/wrapper/xarm_motion.i: cxx/src/xarm/wrapper/xarm_motion.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_motion.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_motion.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_motion.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_motion.cc.i
 
 cxx/src/xarm/wrapper/xarm_motion.s: cxx/src/xarm/wrapper/xarm_motion.cc.s
@@ -881,7 +881,7 @@ cxx/src/xarm/wrapper/xarm_motion.s: cxx/src/xarm/wrapper/xarm_motion.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_motion.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_motion.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_motion.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_motion.cc.s
 
 cxx/src/xarm/wrapper/xarm_params.o: cxx/src/xarm/wrapper/xarm_params.cc.o
@@ -890,7 +890,7 @@ cxx/src/xarm/wrapper/xarm_params.o: cxx/src/xarm/wrapper/xarm_params.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_params.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_params.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_params.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_params.cc.o
 
 cxx/src/xarm/wrapper/xarm_params.i: cxx/src/xarm/wrapper/xarm_params.cc.i
@@ -899,7 +899,7 @@ cxx/src/xarm/wrapper/xarm_params.i: cxx/src/xarm/wrapper/xarm_params.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_params.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_params.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_params.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_params.cc.i
 
 cxx/src/xarm/wrapper/xarm_params.s: cxx/src/xarm/wrapper/xarm_params.cc.s
@@ -908,7 +908,7 @@ cxx/src/xarm/wrapper/xarm_params.s: cxx/src/xarm/wrapper/xarm_params.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_params.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_params.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_params.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_params.cc.s
 
 cxx/src/xarm/wrapper/xarm_record.o: cxx/src/xarm/wrapper/xarm_record.cc.o
@@ -917,7 +917,7 @@ cxx/src/xarm/wrapper/xarm_record.o: cxx/src/xarm/wrapper/xarm_record.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_record.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_record.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_record.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_record.cc.o
 
 cxx/src/xarm/wrapper/xarm_record.i: cxx/src/xarm/wrapper/xarm_record.cc.i
@@ -926,7 +926,7 @@ cxx/src/xarm/wrapper/xarm_record.i: cxx/src/xarm/wrapper/xarm_record.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_record.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_record.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_record.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_record.cc.i
 
 cxx/src/xarm/wrapper/xarm_record.s: cxx/src/xarm/wrapper/xarm_record.cc.s
@@ -935,7 +935,7 @@ cxx/src/xarm/wrapper/xarm_record.s: cxx/src/xarm/wrapper/xarm_record.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_record.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_record.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_record.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_record.cc.s
 
 cxx/src/xarm/wrapper/xarm_report.o: cxx/src/xarm/wrapper/xarm_report.cc.o
@@ -944,7 +944,7 @@ cxx/src/xarm/wrapper/xarm_report.o: cxx/src/xarm/wrapper/xarm_report.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_report.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_report.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_report.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_report.cc.o
 
 cxx/src/xarm/wrapper/xarm_report.i: cxx/src/xarm/wrapper/xarm_report.cc.i
@@ -953,7 +953,7 @@ cxx/src/xarm/wrapper/xarm_report.i: cxx/src/xarm/wrapper/xarm_report.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_report.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_report.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_report.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_report.cc.i
 
 cxx/src/xarm/wrapper/xarm_report.s: cxx/src/xarm/wrapper/xarm_report.cc.s
@@ -962,7 +962,7 @@ cxx/src/xarm/wrapper/xarm_report.s: cxx/src/xarm/wrapper/xarm_report.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_report.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_report.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_report.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_report.cc.s
 
 cxx/src/xarm/wrapper/xarm_robotiq.o: cxx/src/xarm/wrapper/xarm_robotiq.cc.o
@@ -971,7 +971,7 @@ cxx/src/xarm/wrapper/xarm_robotiq.o: cxx/src/xarm/wrapper/xarm_robotiq.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_robotiq.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_robotiq.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_robotiq.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_robotiq.cc.o
 
 cxx/src/xarm/wrapper/xarm_robotiq.i: cxx/src/xarm/wrapper/xarm_robotiq.cc.i
@@ -980,7 +980,7 @@ cxx/src/xarm/wrapper/xarm_robotiq.i: cxx/src/xarm/wrapper/xarm_robotiq.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_robotiq.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_robotiq.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_robotiq.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_robotiq.cc.i
 
 cxx/src/xarm/wrapper/xarm_robotiq.s: cxx/src/xarm/wrapper/xarm_robotiq.cc.s
@@ -989,7 +989,7 @@ cxx/src/xarm/wrapper/xarm_robotiq.s: cxx/src/xarm/wrapper/xarm_robotiq.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_robotiq.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_robotiq.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_robotiq.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_robotiq.cc.s
 
 cxx/src/xarm/wrapper/xarm_servo.o: cxx/src/xarm/wrapper/xarm_servo.cc.o
@@ -998,7 +998,7 @@ cxx/src/xarm/wrapper/xarm_servo.o: cxx/src/xarm/wrapper/xarm_servo.cc.o
 
 # target to build an object file
 cxx/src/xarm/wrapper/xarm_servo.cc.o:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_servo.cc.o
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_servo.cc.o
 .PHONY : cxx/src/xarm/wrapper/xarm_servo.cc.o
 
 cxx/src/xarm/wrapper/xarm_servo.i: cxx/src/xarm/wrapper/xarm_servo.cc.i
@@ -1007,7 +1007,7 @@ cxx/src/xarm/wrapper/xarm_servo.i: cxx/src/xarm/wrapper/xarm_servo.cc.i
 
 # target to preprocess a source file
 cxx/src/xarm/wrapper/xarm_servo.cc.i:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_servo.cc.i
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_servo.cc.i
 .PHONY : cxx/src/xarm/wrapper/xarm_servo.cc.i
 
 cxx/src/xarm/wrapper/xarm_servo.s: cxx/src/xarm/wrapper/xarm_servo.cc.s
@@ -1016,7 +1016,7 @@ cxx/src/xarm/wrapper/xarm_servo.s: cxx/src/xarm/wrapper/xarm_servo.cc.s
 
 # target to generate assembly for a file
 cxx/src/xarm/wrapper/xarm_servo.cc.s:
-	cd /home/liubenchuk/xarm_ws/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_servo.cc.s
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(MAKE) -f xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/build.make xarm_ros/xarm_sdk/CMakeFiles/xarm_cxx_sdk.dir/cxx/src/xarm/wrapper/xarm_servo.cc.s
 .PHONY : cxx/src/xarm/wrapper/xarm_servo.cc.s
 
 # Help Target
@@ -1137,6 +1137,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/liubenchuk/xarm_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

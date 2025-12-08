@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_planner/srv/exec_plan.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_planner/srv/joint_plan.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_planner/srv/pose_plan.js"
-  "/home/liubenchuk/xarm_ws/devel/share/gennodejs/ros/xarm_planner/srv/single_straight_plan.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_planner/srv/exec_plan.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_planner/srv/joint_plan.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_planner/srv/pose_plan.js"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/gennodejs/ros/xarm_planner/srv/single_straight_plan.js"
   "CMakeFiles/xarm_planner_generate_messages_nodejs"
 )
 

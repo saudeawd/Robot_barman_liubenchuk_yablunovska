@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/share/common-lisp/ros/xarm_gripper/msg/MoveAction.lisp"
-  "/home/liubenchuk/xarm_ws/devel/share/common-lisp/ros/xarm_gripper/msg/MoveActionFeedback.lisp"
-  "/home/liubenchuk/xarm_ws/devel/share/common-lisp/ros/xarm_gripper/msg/MoveActionGoal.lisp"
-  "/home/liubenchuk/xarm_ws/devel/share/common-lisp/ros/xarm_gripper/msg/MoveActionResult.lisp"
-  "/home/liubenchuk/xarm_ws/devel/share/common-lisp/ros/xarm_gripper/msg/MoveFeedback.lisp"
-  "/home/liubenchuk/xarm_ws/devel/share/common-lisp/ros/xarm_gripper/msg/MoveGoal.lisp"
-  "/home/liubenchuk/xarm_ws/devel/share/common-lisp/ros/xarm_gripper/msg/MoveResult.lisp"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/common-lisp/ros/xarm_gripper/msg/MoveAction.lisp"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/common-lisp/ros/xarm_gripper/msg/MoveActionFeedback.lisp"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/common-lisp/ros/xarm_gripper/msg/MoveActionGoal.lisp"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/common-lisp/ros/xarm_gripper/msg/MoveActionResult.lisp"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/common-lisp/ros/xarm_gripper/msg/MoveFeedback.lisp"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/common-lisp/ros/xarm_gripper/msg/MoveGoal.lisp"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/common-lisp/ros/xarm_gripper/msg/MoveResult.lisp"
   "CMakeFiles/xarm_gripper_generate_messages_lisp"
 )
 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/liubenchuk/xarm_ws/src
-# Build directory: /home/liubenchuk/xarm_ws/build
+# Source directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/src
+# Build directory: /home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -23,6 +23,8 @@ subdirs("xarm_ros/examples/xarm7_vacuum_gripper_moveit_config")
 subdirs("xarm_ros/xarm_msgs")
 subdirs("xarm_ros/xarm_sdk")
 subdirs("xarm_ros/xarm_vision/camera_demo")
+subdirs("roboticsgroup_gazebo_plugins")
+subdirs("cup_detection")
 subdirs("xarm_ros/examples/xarm7_redundancy_res")
 subdirs("xarm_ros/xarm_api")
 subdirs("xarm_ros/examples/run_recorded_traj")

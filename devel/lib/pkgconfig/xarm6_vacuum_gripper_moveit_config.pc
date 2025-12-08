@@ -1,4 +1,4 @@
-prefix=/home/liubenchuk/xarm_ws/devel
+prefix=/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel
 
 Name: xarm6_vacuum_gripper_moveit_config
 Description: Description of xarm6_vacuum_gripper_moveit_config

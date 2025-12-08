@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_planner/manifest.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_planner/srv/exec_plan.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_planner/srv/joint_plan.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_planner/srv/pose_plan.l"
-  "/home/liubenchuk/xarm_ws/devel/share/roseus/ros/xarm_planner/srv/single_straight_plan.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_planner/manifest.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_planner/srv/exec_plan.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_planner/srv/joint_plan.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_planner/srv/pose_plan.l"
+  "/home/anastasiiayablunovska/Robot_barman_liubenchuk_yablunovska/devel/share/roseus/ros/xarm_planner/srv/single_straight_plan.l"
   "CMakeFiles/xarm_planner_generate_messages_eus"
 )
 
