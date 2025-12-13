@@ -2,7 +2,18 @@
 <sdf version='1.6'>
   <model name='bottle_beer'>
     <link name='link_2'>
-      <pose>0 0 0 0 0 0</pose>
+
+      
+      <!-- ВАЖЛИВО: Додаємо фізичні властивості -->
+      <inertial>
+        <mass>0.5</mass>  <!-- маса в кг (пляшка ~500г) -->
+        <inertia>
+          <ixx>0.001</ixx>
+          <iyy>0.001</iyy>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      
       <visual name='visual'>
         <geometry>
           <mesh>
@@ -17,16 +28,33 @@
         <cast_shadows>1</cast_shadows>
         <transparency>0.4</transparency>
       </visual>
+      
       <collision name='collision'>
         <geometry>
-          <mesh>
-            <uri>model://bottle_beer/meshes/beer_bottle.dae</uri>
-            <scale>1 1 1</scale>
-          </mesh>
+          <!-- Краще використовувати просту геометрію для фізики -->
+          <cylinder>
+            <radius>0.03</radius>    <!-- ~3см радіус -->
+            <length>0.2</length>     <!-- 20см висота -->
+          </cylinder>
         </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.5</mu>
+              <mu2>0.5</mu2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0.3</restitution_coefficient>
+          </bounce>
+        </surface>
       </collision>
     </link>
-    <static>1</static>
+    
+    <!-- КЛЮЧОВА ЗМІНА: 0 замість 1 -->
+    <static>0</static>  <!-- 0 = динамічна, 1 = статична -->
+    
+    <!-- Додаткові фізичні параметри -->
+    <allow_auto_disable>false</allow_auto_disable>
   </model>
 </sdf>
-

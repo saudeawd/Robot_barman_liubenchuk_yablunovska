@@ -11,7 +11,6 @@ from collections import deque
 model_path = "yolov8n.onnx"
 session = ort.InferenceSession(model_path, providers=['CPUExecutionProvider'])
 
-# Separate publishers for bottle and cup
 bottle_pub = rospy.Publisher('/bottle_coords', PointStamped, queue_size=10)
 cup_pub = rospy.Publisher('/cup_coords', PointStamped, queue_size=10)
 
@@ -23,8 +22,7 @@ RELEVANT_CLASSES = {
     41: 'cup'
 }
 
-# Temporal smoothing - зберігаємо останні детекції
-bottle_history = deque(maxlen=5)  # Останні 5 кадрів
+bottle_history = deque(maxlen=5)
 cup_history = deque(maxlen=5)
 
 def preprocess(img):
@@ -36,7 +34,6 @@ def preprocess(img):
     return img_in, w, h
 
 def nms(boxes, scores, iou_threshold=0.5):
-    """Non-Maximum Suppression to remove duplicate detections"""
     if len(boxes) == 0:
         return []
     
@@ -73,16 +70,13 @@ def nms(boxes, scores, iou_threshold=0.5):
     return keep
 
 def smooth_detection(history, new_detection):
-    """Згладжування детекцій з використанням історії"""
     if new_detection is None:
-        # Якщо немає нової детекції, використовуємо останню
         if len(history) > 0:
             return history[-1]
         return None
     
     history.append(new_detection)
     
-    # Усереднюємо координати за останні кадри
     if len(history) > 0:
         cx_avg = int(np.mean([d['cx'] for d in history]))
         cy_avg = int(np.mean([d['cy'] for d in history]))
@@ -119,8 +113,7 @@ def callback(msg):
     class_ids = np.argmax(class_scores, axis=1)
     confidences = np.max(class_scores, axis=1)
     
-    # Знижуємо поріг для стакана
-    mask = confidences > 0.2  # Нижчий поріг
+    mask = confidences > 0.2
     boxes_xywh = boxes_xywh[mask]
     class_ids = class_ids[mask]
     confidences = confidences[mask]
@@ -164,10 +157,10 @@ def callback(msg):
         
         box = [x1, y1, x2, y2]
         
-        if cls == 39:  # bottle
+        if cls == 39:
             bottle_boxes.append(box)
             bottle_scores.append(conf)
-        elif cls in [40, 41]:  # wine_glass or cup
+        elif cls in [40, 41]:
             cup_boxes.append(box)
             cup_scores.append(conf)
     
@@ -176,7 +169,6 @@ def callback(msg):
     
     detection_count = 0
     
-    # Process bottle
     bottle_detection = None
     for idx in bottle_indices:
         x1, y1, x2, y2 = bottle_boxes[idx]
@@ -191,7 +183,6 @@ def callback(msg):
             }
         break
     
-    # Smooth bottle detection
     bottle_smoothed = smooth_detection(bottle_history, bottle_detection)
     
     if bottle_smoothed:
@@ -208,14 +199,13 @@ def callback(msg):
         
         ps = PointStamped()
         ps.header.stamp = rospy.Time.now()
-        ps.header.frame_id = "camera_color_optical_frame"
+        ps.header.frame_id = "camera"
         ps.point.x = float(cx)
         ps.point.y = float(cy)
         ps.point.z = 0.0
         bottle_pub.publish(ps)
         rospy.loginfo_throttle(2, f"Bottle: ({cx},{cy}), Conf={conf:.2f}")
     
-    # Process cup
     cup_detection = None
     for idx in cup_indices:
         x1, y1, x2, y2 = cup_boxes[idx]
@@ -230,7 +220,6 @@ def callback(msg):
             }
         break
     
-    # Smooth cup detection
     cup_smoothed = smooth_detection(cup_history, cup_detection)
     
     if cup_smoothed:
@@ -247,7 +236,7 @@ def callback(msg):
         
         ps = PointStamped()
         ps.header.stamp = rospy.Time.now()
-        ps.header.frame_id = "camera_color_optical_frame"
+        ps.header.frame_id = "camera"
         ps.point.x = float(cx)
         ps.point.y = float(cy)
         ps.point.z = 0.0
@@ -261,6 +250,6 @@ def callback(msg):
     cv2.waitKey(1)
 
 rospy.init_node('cup_detector')
-rospy.Subscriber('/arm_camera/image_raw', Image, callback)
+rospy.Subscriber('/usb_cam/image_raw', Image, callback)
 rospy.spin()
 cv2.destroyAllWindows()
